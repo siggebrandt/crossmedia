@@ -1,7 +1,11 @@
-# crossmedia-projekt
+# Crossmedia Projekt
 
 **Projekt, Crossmedia: Projekt, Malmö Universitet, Vårterminen 2026**
 
 ## Beskrivning
 
+...
+
 ## Redovisning
+
+länk
