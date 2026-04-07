@@ -5,3 +5,10 @@
   font-family: system-ui;
   border: 0;
 }
+
+/* - Färg Variabler - */
+:root {
+  --blue: #0078ff;
+  --black: #000000;
+  --white: #ffffff;
+}
