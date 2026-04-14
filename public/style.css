@@ -9,6 +9,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+#messageView {
+  display: none;
+}
+
 #allMessagesView {
   display: flex;
   flex-direction: column;
@@ -40,8 +44,8 @@ h4 {
   min-height: 43px;
   max-height: 43px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #1B1B1D;
-  color: #A2A1A3;
+  border-bottom: 1px solid #1b1b1d;
+  color: #a2a1a3;
 }
 
 .profilePicture {
@@ -58,7 +62,7 @@ h4 {
 }
 
 #johannez {
-  background-image: url(../../../../Desktop/Johannez\ shady.png)
+  background-image: url(../../../../Desktop/Johannez\ shady.png);
 }
 
 /* - Färg Variabler - */
@@ -71,9 +75,8 @@ h4 {
   /* gråa bubblor */
   --lightgray: #a2a1a3;
   /* ljusgråa ikoner */
-  --darkgray: #1B1B1D
-    /* borders */
-    --white: #ffffff;
+  --darkgray: #1b1b1d; /* borders */
+  --white: #ffffff;
   /* textfärg */
 }
 
@@ -124,4 +127,12 @@ main {
 .chatTime {
   color: var(--lightgray);
   font-size: 12px;
+}
+.chatThey {
+  background-color: var(--gray);
+  color: var(--white);
+}
+.chatMe {
+  background-color: var(--blue);
+  color: var(--white);
 }
