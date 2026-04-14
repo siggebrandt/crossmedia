@@ -5,10 +5,14 @@
   font-family: system-ui;
   border: 0;
 }
+
 body {
-  max-width: 750px /* 100vw */;
+  max-width: 750px
+    /* 100vw */
+  ;
   margin: auto;
 }
+
 header {
   height: 20vh;
   background-color: var(--black);
@@ -19,17 +23,25 @@ header {
   color: var(--blue);
   padding: 0 10vw;
 }
+
 main {
   background-color: var(--black);
 }
+
 #headerProfile img {
   border-radius: 50%;
 }
 
 /* - Färg Variabler - */
 :root {
-  --blue: #0078ff; /* blå bubble */
-  --black: #000000; /* bakgrund */
-  --gray: #262629; /* gråa bubblor */
-  --white: #ffffff; /* textfärg */
+  --blue: #0078ff;
+  /* blå bubble */
+  --black: #000000;
+  /* bakgrund */
+  --gray: #262629;
+  /* gråa bubblor */
+  --lightgray: #A2A1A3;
+  /* ljusgråa ikoner */
+  --white: #ffffff;
+  /* textfärg */
 }
