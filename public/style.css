@@ -1,16 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui;
   border: 0;
+  font-family: "Nunito", sans-serif;
 }
 
 body {
-  max-width: 750px
-    /* 100vw */
-  ;
+  max-width: 750px /* 100vw */;
   margin: auto;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 header {
@@ -26,10 +29,17 @@ header {
 
 main {
   background-color: var(--black);
+  height: 80vh;
 }
 
 #headerProfile img {
   border-radius: 50%;
+  width: 75px;
+}
+#headerProfile p {
+  color: red;
+  text-align: center;
+  margin-top: -10px;
 }
 
 /* - Färg Variabler - */
@@ -40,7 +50,7 @@ main {
   /* bakgrund */
   --gray: #262629;
   /* gråa bubblor */
-  --lightgray: #A2A1A3;
+  --lightgray: #a2a1a3;
   /* ljusgråa ikoner */
   --white: #ffffff;
   /* textfärg */
