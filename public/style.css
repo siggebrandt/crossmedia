@@ -12,7 +12,7 @@ body {
 header {
   height: 20vh;
   background-color: var(--black);
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--gray);
   display: flex;
   justify-content: space-between;
   align-items: center;
