@@ -124,9 +124,13 @@ main {
 }
 
 /* -- C H A T -- */
+#chatWindow {
+  text-align: center;
+}
 .chatTime {
   color: var(--lightgray);
   font-size: 12px;
+  padding: 5px;
 }
 .chatThey {
   background-color: var(--gray);
