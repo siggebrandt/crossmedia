@@ -5,6 +5,14 @@
   font-family: system-ui;
   border: 0;
 }
+body {
+  background-color: var(--black);
+}
+header {
+  height: 20vh;
+  background-color: var(--black);
+  border-bottom: 1px solid white;
+}
 
 /* - Färg Variabler - */
 :root {
