@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -7,39 +6,6 @@
   font-family: system-ui;
   border: 0;
   font-family: "Nunito", sans-serif;
-}
-
-body {
-  max-width: 750px /* 100vw */;
-  margin: auto;
-  max-height: 100vh;
-  overflow: hidden;
-}
-
-header {
-  height: 20vh;
-  background-color: var(--black);
-  border-bottom: 1px solid var(--gray);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--blue);
-  padding: 0 10vw;
-}
-
-main {
-  background-color: var(--black);
-  height: 80vh;
-}
-
-#headerProfile img {
-  border-radius: 50%;
-  width: 75px;
-}
-#headerProfile p {
-  color: red;
-  text-align: center;
-  margin-top: -10px;
 }
 
 /* - Färg Variabler - */
@@ -54,4 +20,51 @@ main {
   /* ljusgråa ikoner */
   --white: #ffffff;
   /* textfärg */
+}
+
+body {
+  max-width: 500px;
+  margin: auto;
+  max-height: 100vh;
+  overflow: hidden;
+}
+/* -- H E A D E R -- */
+
+header {
+  height: 115px;
+  background-color: var(--black);
+  border-bottom: 1px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--blue);
+  padding: 0 25px;
+}
+header img {
+  width: 30px;
+  margin-bottom: 17.5px;
+}
+
+#headerProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+#headerProfile img {
+  border-radius: 100%;
+  width: 65px;
+  margin: 0;
+}
+
+main {
+  background-color: var(--black);
+  height: calc(100vh - 115px);
+}
+
+/* -- C H A T -- */
+.chatTime {
+  color: var(--lightgray);
+  font-size: 12px;
 }
