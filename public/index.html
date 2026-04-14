@@ -1,21 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Crossmedia</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Crossmedia</title>
+</head>
+
+<body>
+  <div id="messageView">
     <header>
-      <div id="headerBack"><</div>
-      <div id="headerProfile">
-        <img src="assets/profileIcon.png" alt="???" />???
-      </div>
-      <div id="headerCall">*</div>
+      <div id="headerBack">
+        << /div>
+          <div id="headerProfile">
+            <img src="assets/profileIcon.png" alt="???" />???
+          </div>
+          <div id="headerCall">*</div>
     </header>
     <main></main>
-    <!-- script -->
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <div id="allMessagesView">
+    <h1>Meddelanden</h1>
+    <div id="messagesContainer">
+      <div class="messagePerson">
+        <div class="profilePicture" id="unknown"></div>
+        <div class="nameAndMessageContainer">
+          <h4>Okänt nummer</h4>
+          <p class="messageText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="messagePerson">
+        <div class="profilePicture" id="johannez"></div>
+        <div class="nameAndMessageContainer">
+          <h4>Johannez</h4>
+          <p class="messageText">desinge</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- script -->
+  <script src="script.js"></script>
+</body>
+
 </html>
