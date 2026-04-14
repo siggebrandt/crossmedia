@@ -1,44 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui;
   border: 0;
-<<<<<<< HEAD
-}
-
-body {
-  max-width: 750px
-    /* 100vw */
-  ;
-  margin: auto;
-}
-
-#messageView {
-  display: none;
-}
-
-header {
-  height: 20vh;
-  background-color: var(--black);
-  border-bottom: 1px solid var(--gray);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--blue);
-  padding: 0 10vw;
-}
-
-main {
-  background-color: var(--black);
-}
-
-#headerProfile img {
-  border-radius: 50%;
-=======
   font-family: "Nunito", sans-serif;
->>>>>>> main
 }
 
 #allMessagesView {
@@ -115,6 +83,7 @@ body {
   max-height: 100vh;
   overflow: hidden;
 }
+
 /* -- H E A D E R -- */
 
 header {
@@ -127,6 +96,7 @@ header {
   color: var(--blue);
   padding: 0 25px;
 }
+
 header img {
   width: 30px;
   margin-bottom: 17.5px;
