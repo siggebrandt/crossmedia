@@ -135,8 +135,10 @@ main {
 .chatThey {
   background-color: var(--gray);
   color: var(--white);
+  padding: 5px;
 }
 .chatMe {
   background-color: var(--blue);
   color: var(--white);
+  padding: 5px;
 }
