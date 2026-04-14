@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: system-ui;
   border: 0;
+<<<<<<< HEAD
 }
 
 body {
@@ -34,6 +36,9 @@ main {
 
 #headerProfile img {
   border-radius: 50%;
+=======
+  font-family: "Nunito", sans-serif;
+>>>>>>> main
 }
 
 #allMessagesView {
@@ -96,10 +101,57 @@ h4 {
   /* bakgrund */
   --gray: #262629;
   /* gråa bubblor */
-  --lightgray: #A2A1A3;
+  --lightgray: #a2a1a3;
   /* ljusgråa ikoner */
   --darkgray: #1B1B1D
     /* borders */
     --white: #ffffff;
   /* textfärg */
+}
+
+body {
+  max-width: 500px;
+  margin: auto;
+  max-height: 100vh;
+  overflow: hidden;
+}
+/* -- H E A D E R -- */
+
+header {
+  height: 115px;
+  background-color: var(--black);
+  border-bottom: 1px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--blue);
+  padding: 0 25px;
+}
+header img {
+  width: 30px;
+  margin-bottom: 17.5px;
+}
+
+#headerProfile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--white);
+}
+
+#headerProfile img {
+  border-radius: 100%;
+  width: 65px;
+  margin: 0;
+}
+
+main {
+  background-color: var(--black);
+  height: calc(100vh - 115px);
+}
+
+/* -- C H A T -- */
+.chatTime {
+  color: var(--lightgray);
+  font-size: 12px;
 }
