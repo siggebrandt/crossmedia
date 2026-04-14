@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,58 @@
   font-family: system-ui;
   border: 0;
   font-family: "Nunito", sans-serif;
+}
+
+#allMessagesView {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px 15px;
+  background-color: #000000;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.messagePerson {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 5px;
+}
+
+h4 {
+  color: #fff;
+}
+
+.messageText {
+  font-size: 12px;
+  width: 235px;
+  min-height: 43px;
+  max-height: 43px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #1B1B1D;
+  color: #A2A1A3;
+}
+
+.profilePicture {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+#unknown {
+  background-image: url(images/blankprofilepicture.jpg);
+}
+
+#johannez {
+  background-image: url(../../../../Desktop/Johannez\ shady.png)
 }
 
 /* - Färg Variabler - */
@@ -18,7 +71,9 @@
   /* gråa bubblor */
   --lightgray: #a2a1a3;
   /* ljusgråa ikoner */
-  --white: #ffffff;
+  --darkgray: #1B1B1D
+    /* borders */
+    --white: #ffffff;
   /* textfärg */
 }
 
@@ -28,6 +83,7 @@ body {
   max-height: 100vh;
   overflow: hidden;
 }
+
 /* -- H E A D E R -- */
 
 header {
@@ -40,6 +96,7 @@ header {
   color: var(--blue);
   padding: 0 25px;
 }
+
 header img {
   width: 30px;
   margin-bottom: 17.5px;
