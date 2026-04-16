@@ -7,6 +7,7 @@
   font-family: system-ui;
   border: 0;
   font-family: "Nunito", sans-serif;
+  font-size: 0.98em;
 }
 
 #messageView {
@@ -28,6 +29,7 @@ h1 {
 }
 
 .messagePerson {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -118,6 +120,10 @@ header img {
   margin-bottom: 17.5px;
 }
 
+#headerBack img {
+  cursor: pointer;
+}
+
 #headerProfile {
   display: flex;
   flex-direction: column;
@@ -138,23 +144,40 @@ main {
 
 /* -- C H A T -- */
 #chatWindow {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 10px 10px 20px;
 }
 
 .chatTime {
+  align-self: center;
   color: var(--lightgray);
   font-size: 12px;
-  padding: 5px;
+  padding: 5px 0 20px;
+  user-select: none;
 }
 
 .chatThey {
   background-color: var(--gray);
   color: var(--white);
-  padding: 5px;
+  padding: 7.5px 12px;
+  border-radius: 7.5px;
+  align-self: flex-start;
+  max-width: 75%;
+  user-select: none;
+  font-size: 1.05em;
+  margin-bottom: 7.5px;
 }
 
 .chatMe {
   background-color: var(--blue);
   color: var(--white);
-  padding: 5px;
+  padding: 7.5px 12px;
+  border-radius: 7.5px;
+  align-self: flex-end;
+  max-width: 75%;
+  user-select: none;
+  font-size: 1.05em;
+  margin-bottom: 7.5px;
 }
