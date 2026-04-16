@@ -146,6 +146,7 @@ main {
 #chatWindow {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
   align-items: baseline;
   padding: 10px 10px 20px;
 }
