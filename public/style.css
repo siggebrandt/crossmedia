@@ -38,6 +38,18 @@ h4 {
   color: #fff;
 }
 
+.nameAndTime {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  color: #a2a1a3;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
 .messageText {
   font-size: 12px;
   width: 235px;
@@ -57,7 +69,7 @@ h4 {
   border-radius: 50%;
 }
 
-#unknown {
+#unknownProfilePicture {
   background-image: url(images/blankprofilepicture.jpg);
 }
 
@@ -75,7 +87,8 @@ h4 {
   /* gråa bubblor */
   --lightgray: #a2a1a3;
   /* ljusgråa ikoner */
-  --darkgray: #1b1b1d; /* borders */
+  --darkgray: #1b1b1d;
+  /* borders */
   --white: #ffffff;
   /* textfärg */
 }
@@ -127,16 +140,19 @@ main {
 #chatWindow {
   text-align: center;
 }
+
 .chatTime {
   color: var(--lightgray);
   font-size: 12px;
   padding: 5px;
 }
+
 .chatThey {
   background-color: var(--gray);
   color: var(--white);
   padding: 5px;
 }
+
 .chatMe {
   background-color: var(--blue);
   color: var(--white);
