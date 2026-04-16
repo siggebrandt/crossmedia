@@ -1,11 +1,11 @@
 const messageView = document.getElementById("messageView");
 const allMessagesView = document.getElementById("allMessagesView");
-const unknownNumber = document.querySelector("#unknownMessager");
-const timeUnknown = document.querySelector("#timeUnknown");
+const unknownMessager = document.querySelector("#unknownMessager");
+const timeUnknown = document.querySelector("#timeUnknown")
 
 const headerBack = document.querySelector("#headerBack");
 
-unknownNumber.addEventListener("click", function () {
+unknownMessager.addEventListener("click", function () {
   messageView.style.display = "block";
   allMessagesView.style.display = "none";
 });
@@ -17,7 +17,12 @@ headerBack.addEventListener("click", function () {
 
 function timeOnMessage(messagerDiv) {
   const timeNow = new Date();
-  const timeString = timeNow.toLocaleTimeString();
+  const timeString = timeNow.toLocaleTimeString("sv-SE",
+    {
+      hour: "2-digit",
+      minute: "2-digit"
+    }
+  );
 
   messagerDiv.textContent = timeString;
 }
