@@ -29,6 +29,7 @@ h1 {
 }
 
 .messagePerson {
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -160,20 +161,23 @@ main {
 .chatThey {
   background-color: var(--gray);
   color: var(--white);
-  padding: 7.5px;
-  /* padding-left: 10px; */
+  padding: 7.5px 12px;
   border-radius: 7.5px;
   align-self: flex-start;
   max-width: 75%;
   user-select: none;
+  font-size: 1.05em;
+  margin-bottom: 7.5px;
 }
 
 .chatMe {
   background-color: var(--blue);
   color: var(--white);
-  padding: 7.5px;
+  padding: 7.5px 12px;
   border-radius: 7.5px;
   align-self: flex-end;
   max-width: 75%;
   user-select: none;
+  font-size: 1.05em;
+  margin-bottom: 7.5px;
 }
