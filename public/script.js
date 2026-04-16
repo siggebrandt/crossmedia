@@ -1,7 +1,7 @@
 const messageView = document.getElementById("messageView");
 const allMessagesView = document.getElementById("allMessagesView");
 const unknownMessager = document.querySelector("#unknownMessager");
-const timeUnknown = document.querySelector("#timeUnknown")
+const timeUnknownMessanger = document.querySelector("#timeUnknownMessanger")
 
 const headerBack = document.querySelector("#headerBack");
 
@@ -27,4 +27,4 @@ function timeOnMessage(messagerDiv) {
   messagerDiv.textContent = timeString;
 }
 
-timeOnMessage(timeUnknown);
+timeOnMessage(timeUnknownMessanger);
