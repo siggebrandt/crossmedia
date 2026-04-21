@@ -21,12 +21,16 @@
   width: 100vw;
   height: 100vh;
   padding: 30px 15px;
-  background-color: #000000;
+  background-color: var(--black)
+}
+
+#allMessagesViewHeader {
+  height: 85px;
 }
 
 h1 {
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--white);
 }
 
 .messagePerson {
@@ -38,7 +42,7 @@ h1 {
 }
 
 h4 {
-  color: #fff;
+  color: var(--white);
 }
 
 .nameAndTime {
@@ -46,11 +50,26 @@ h4 {
   justify-content: space-between;
 }
 
+.timeAndArrow {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .time {
-  color: #a2a1a3;
+  color: var(--lightgray);
   font-size: 12px;
   display: flex;
   align-items: center;
+}
+
+.arrowForward {
+  background-image: url(icons/arrowforward.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
 }
 
 .messageText {
@@ -59,8 +78,8 @@ h4 {
   min-height: 43px;
   max-height: 43px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #1b1b1d;
-  color: #a2a1a3;
+  border-bottom: 1px solid var(--darkgray);
+  color: var(--lightgray);
 }
 
 .profilePicture {
@@ -90,6 +109,8 @@ h4 {
   /* gråa bubblor */
   --lightgray: #a2a1a3;
   /* ljusgråa ikoner */
+  --lightgraytwo: #262629;
+  /* pil framåt */
   --darkgray: #1b1b1d;
   /* borders */
   --white: #ffffff;

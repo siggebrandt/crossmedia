@@ -7,6 +7,46 @@
     <title>Crossmedia</title>
   </head>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Crossmedia</title>
+</head>
+
+<body>
+  <div id="messageView">
+    <header>
+      <div id="headerBack"><img src="icons/arrowback.svg" /></div>
+      <div id="headerProfile">
+        <img src="icons/contacticon.svg" />
+        <p>Anna</p>
+      </div>
+      <div id="headerCall"><img src="icons/videocall.svg" /></div>
+    </header>
+    <main>
+      <div id="chatWindow">
+        <div class="chatTime">idag 10:55</div>
+        <span class="chatThey">Hej</span>
+        <span class="chatMe">Hej Anna</span>
+      </div>
+    </main>
+  </div>
+  <!------->
+  <div id="allMessagesView">
+    <div id="allMessagesViewHeader">
+      <h1>Meddelanden</h1>
+    </div>
+    <div id="messagesContainer">
+      <div class="messagePerson" id="unknownMessager">
+        <div class="profilePicture" id="unknownProfilePicture"></div>
+        <div>
+          <div class="nameAndTime">
+            <h4>Okänt nummer</h4>
+            <div class="timeAndArrow">
+              <div class="time" id="timeUnknownMessanger">00:00</div>
+              <div class="arrowForward"></div>
+            </div>
   <body>
     <div id="messageView">
       <header>
@@ -64,6 +104,16 @@
             </p>
           </div>
         </div>
+      </div>
+      <div class="messagePerson">
+        <div class="profilePicture" id="johannez"></div>
+        <div class="nameAndMessageContainer">
+          <div class="nameAndTime">
+            <h4>Johannez</h4>
+            <div class="timeAndArrow">
+              <div class="time">00:01</div>
+              <div class="arrowForward"></div>
+            </div>
         <div class="messagePerson">
           <div class="profilePicture" id="johannez"></div>
           <div class="nameAndMessageContainer">
