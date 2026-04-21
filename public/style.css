@@ -12,6 +12,7 @@
 
 #messageView {
   display: none;
+  background: var(--black);
 }
 
 #allMessagesView {
@@ -140,6 +141,7 @@ header img {
 main {
   background-color: var(--black);
   height: calc(100vh - 115px);
+  overflow-y: scroll;
 }
 
 /* -- C H A T -- */
