@@ -1,119 +1,95 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Crossmedia</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Crossmedia</title>
-</head>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Crossmedia</title>
-</head>
-
-<body>
-  <div id="messageView">
-    <header>
-      <div id="headerBack"><img src="icons/arrowback.svg" /></div>
-      <div id="headerProfile">
-        <img src="icons/contacticon.svg" />
-        <p>Anna</p>
-      </div>
-      <div id="headerCall"><img src="icons/videocall.svg" /></div>
-    </header>
-    <main>
-      <div id="chatWindow">
-        <div class="chatTime">idag 10:55</div>
-        <span class="chatThey">Hej</span>
-        <span class="chatMe">Hej Anna</span>
-      </div>
-    </main>
-  </div>
-  <!------->
-  <div id="allMessagesView">
-    <div id="allMessagesViewHeader">
-      <h1>Meddelanden</h1>
-    </div>
-    <div id="messagesContainer">
-      <div class="messagePerson" id="unknownMessager">
-        <div class="profilePicture" id="unknownProfilePicture"></div>
-        <div>
-          <div class="nameAndTime">
-            <h4>Okänt nummer</h4>
-            <div class="timeAndArrow">
-              <div class="time" id="timeUnknownMessanger">00:00</div>
-              <div class="arrowForward"></div>
-            </div>
-
-            <body>
-              <div id="messageView">
-                <header>
-                  <div id="headerBack"><img src="icons/arrowback.svg" /></div>
-                  <div id="headerProfile">
-                    <img src="icons/contacticon.svg" />
-                    <p>Anna</p>
-                  </div>
-                  <div id="headerCall"><img src="icons/videocall.svg" /></div>
-                </header>
-                <main>
-                  <div id="chatWindow">
-                    <div class="chatTime">idag 10:55</div>
-                    <span class="chatThey">Hej</span>
-                    <span class="chatMe">Hej Anna</span>
-                    <span class="chatMe">Vad gör du idag Anna! varför skriver du till mig?????</span>
-                    <span class="chatThey">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-                      faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-                      pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-                      tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-                      Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-                      hendrerit semper vel class aptent taciti sociosqu. Ad litora
-                      torquent per conubia nostra inceptos himenaeos.</span>
-                    <span class="chatMe">Vafan Anna</span>
-                    <span class="chatMe">Vafan Anna</span>
-                    <span class="chatMe">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-                      faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-                      pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
-                      tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
-                      Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
-                      hendrerit semper vel class aptent taciti sociosqu. Ad litora
-                      torquent per conubia nostra inceptos himenaeos.</span>
-                  </div>
-                </main>
+  <body>
+    <!--- Message list view --->
+    <div id="allMessagesView">
+      <header>
+        <h1>Meddelanden</h1>
+      </header>
+      <!-- <div id="allMessagesViewHeader">
+        <h1>Meddelanden</h1>
+      </div> -->
+      <main id="messagesContainer">
+        <div class="messagePerson" id="unknownMessager">
+          <div class="profilePicture" id="unknownProfilePicture"></div>
+          <div class="nameAndMessageContainer">
+            <div class="nameAndTime">
+              <h4>Okänt nummer</h4>
+              <div class="timeAndArrow">
+                <div class="time" id="timeUnknownMessanger">00:00</div>
+                <div class="arrowForward"></div>
               </div>
-              <!------->
-              <div id="allMessagesView">
-                <h1>Meddelanden</h1>
-                <div id="messagesContainer">
-                  <div class="messagePerson" id="unknownMessager">
-                    <div class="profilePicture" id="unknownProfilePicture"></div>
-                    <div>
-                      <div class="nameAndTime">
-                        <h4>Okänt nummer</h4>
-                        <div class="time" id="timeUnknown">00:00</div>
-                      </div>
-                      <p class="messageText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="messagePerson">
-                  <div class="profilePicture" id="johannez"></div>
-                  <div class="nameAndMessageContainer">
-                    <div class="nameAndTime">
-                      <h4>Johannez</h4>
-                      <div class="timeAndArrow">
-                        <div class="time">00:01</div>
-                        <div class="arrowForward"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- script -->
-                  <script src="script.js"></script>
-            </body>
+            </div>
+            <p class="messageText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+        </div>
 
+        <div class="messagePerson">
+          <div class="profilePicture" id="johannez"></div>
+          <div class="nameAndMessageContainer">
+            <div class="nameAndTime">
+              <h4>Johannez</h4>
+              <div class="timeAndArrow">
+                <div class="time">00:01</div>
+                <div class="arrowForward"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!--- Conversation view --->
+    <div id="messageView">
+      <header>
+        <div id="headerBack"><img src="icons/arrowback.svg" /></div>
+        <div id="headerProfile">
+          <img src="icons/contacticon.svg" />
+          <p>Anna</p>
+        </div>
+        <div id="headerCall"><img src="icons/videocall.svg" /></div>
+      </header>
+      <main>
+        <div id="chatWindow">
+          <div class="chatTime">idag 10:55</div>
+          <span class="chatThey">Hej</span>
+          <span class="chatMe">Hej Anna</span>
+          <span class="chatMe"
+            >Vad gör du idag Anna! varför skriver du till mig?????</span
+          >
+          <span class="chatThey"
+            >Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+            hendrerit semper vel class aptent taciti sociosqu. Ad litora
+            torquent per conubia nostra inceptos himenaeos.</span
+          >
+          <span class="chatMe">Vafan Anna</span>
+          <span class="chatMe">Vafan Anna</span>
+          <span class="chatMe"
+            >Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
+            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
+            pretium tellus duis convallis. Tempus leo eu aenean sed diam urna
+            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.
+            Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut
+            hendrerit semper vel class aptent taciti sociosqu. Ad litora
+            torquent per conubia nostra inceptos himenaeos.</span
+          >
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
