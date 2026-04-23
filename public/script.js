@@ -45,8 +45,8 @@ function timeOnMessage(messagerDiv) {
   messagerDiv.textContent = timeString;
 }
 
-NewMessage("anna", 1);
-NewMessage("player", 1);
+NewMessage("anna", 1); // anna meddelande 1
+NewMessage("player", 1); // player meddelande 1
 
 timeOnMessage(timeUnknownMessanger);
 
