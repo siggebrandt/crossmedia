@@ -18,10 +18,10 @@
 #allMessagesView {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw;
+  height: 100vh; */
   padding: 30px 15px;
-  background-color: var(--black)
+  background-color: var(--black);
 }
 
 #allMessagesViewHeader {
@@ -31,6 +31,7 @@
 h1 {
   margin-bottom: 10px;
   color: var(--white);
+  font-size: 2em;
 }
 
 .messagePerson {
@@ -38,11 +39,16 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding-top: 5px;
+  margin: 10px 0 10px;
+  height: 55px;
 }
 
 h4 {
   color: var(--white);
+}
+
+.nameAndMessageContainer {
+  width: 450px;
 }
 
 .nameAndTime {
@@ -74,11 +80,11 @@ h4 {
 
 .messageText {
   font-size: 12px;
-  width: 235px;
+  /* width: 235px;
   min-height: 43px;
-  max-height: 43px;
+  max-height: 43px; */
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--darkgray);
+  border-bottom: 1px solid var(--gray);
   color: var(--lightgray);
 }
 
@@ -92,7 +98,7 @@ h4 {
 }
 
 #unknownProfilePicture {
-  background-image: url(images/blankprofilepicture.jpg);
+  background-image: url(icons/contacticon.svg);
 }
 
 #johannez {
@@ -171,7 +177,7 @@ main {
   flex-direction: column;
   overflow-y: scroll;
   align-items: baseline;
-  padding: 10px 10px 20px;
+  padding: 10px 15px 20px;
 }
 
 .chatTime {
