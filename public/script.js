@@ -15,8 +15,11 @@ const messages = [
   },
 ];
 
+const startView = document.getElementById("startView");
 const messageView = document.getElementById("messageView");
 const allMessagesView = document.getElementById("allMessagesView");
+
+const playButton = document.getElementById("playButton");
 
 const messagesAnna = document.querySelector("#messagesAnna");
 const messagesBodil = document.querySelector("#messagesBodil");
@@ -24,6 +27,11 @@ const messagesBodil = document.querySelector("#messagesBodil");
 const timeUnknownMessanger = document.querySelector("#timeUnknownMessanger");
 
 const headerBack = document.querySelector("#headerBack");
+
+playButton.addEventListener("click", function () {
+  startView.style.display = "none"
+  allMessagesView.style.display = "block"
+})
 
 messagesAnna.addEventListener("click", function () {
   messageView.style.display = "block";
