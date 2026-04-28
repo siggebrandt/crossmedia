@@ -55,6 +55,59 @@
             {
                 id: 2,
                 text: "Nej"
+            },
+            {
+                id: 3,
+                text: "Behöver hjälp i Orkanenbiblioteket"
+            },
+            {
+                id: 4,
+                text: "Behöver mer hjälp i Orkanenbiblioteket"
+            },
+            {
+                id: 5,
+                text: "Behöver hjälp vid Kranen"
+            },
+            {
+                id: 6,
+                text: "Behöver hjälp med kartan"
+            },
+            {
+                id: 7,
+                text: "Behöver mer hjälp med kartan"
+            },
+            {
+                id: 8,
+                text: "Behöver hjälp vid Malmö Live"
+            }
+        ]
+    },
+    {
+        name: "Bodil",
+        messages: [
+            {
+                id: 1,
+                text: "Det måste finnas något gömt någonstans, exempelvis en hylla!"
+            },
+            {
+                id: 2,
+                text: "Ta dig till platsen på bilden pucko!"
+            },
+            {
+                id: 3,
+                text: "Scanna qr-koden och leta efter siffror"
+            },
+            {
+                id: 4,
+                text: "Kolla igenom sakerna från kontoret igen. Det kanske finns något där att använda!"
+            },
+            {
+                id: 5,
+                text: "Har du besökt alla tre platser och scannat deras qr-kod?"
+            },
+            {
+                id: 6,
+                text: "Säg att Johannes skickat dig för att hämta det han glömt på rummet"
             }
         ]
     }
