@@ -104,10 +104,9 @@
 #allMessagesView {
   display: none;
   flex-direction: column;
-  /* width: 100vw;
-  height: 100vh; */
   padding: 30px 15px;
   background-color: var(--black);
+  height: 100vh;
 }
 
 #allMessagesViewHeader {
@@ -259,7 +258,7 @@ header img {
 
 main {
   background-color: var(--black);
-  height: calc(100vh - 115px);
+  height: calc(100vh - 115px - 65px);
   overflow-y: scroll;
 }
 
@@ -302,4 +301,34 @@ main {
   user-select: none;
   font-size: 1.05em;
   margin-bottom: 7.5px;
+}
+
+/* -- C H A T -- M E S S A G E-- */
+#sendMessageBox {
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 10px;
+}
+#selectMessageBox {
+  border: 2px solid var(--lightgray);
+  border-radius: 20px;
+  flex: 1 0 0;
+  margin: 0 10px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#selectMessageBoxSend {
+  flex: 0 1 0;
+  margin: 0 10px;
+}
+#selectMessageBox p {
+  color: white;
+  max-width: 150px;
+}
+#selectMessageOne,
+#selectMessageTwo {
+  align-self: center;
 }
