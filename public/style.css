@@ -14,6 +14,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "istokweb";
+  src: url("fonts/IstokWeb-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -36,14 +43,14 @@
   width: 100%;
   overflow: hidden;
   height: 100vh;
+  padding: 10px 0;
 }
 
 #companyName {
-  /* font-family: ; */
-  font-size: 12px;
+  font-size: 3vw;
   color: white;
   position: relative;
-  top: 20px;
+  top: 15px;
 }
 
 #startViewTitle {
@@ -56,6 +63,24 @@
 #startButton {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#playButton:hover #playIconAndTextContainer {
+  transform: scale(1.05);
+}
+
+#playButton:hover #playUnderline {
+  transform: scale(1.05);
+}
+
+#playButton:hover {
+  transform: scale(1.05);
+}
+
+#playButton:hover #playUnderline {
+  background-color: var(--blue);
 }
 
 #playIconAndTextContainer {
@@ -68,20 +93,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 44px;
-  height: 44px;
+  width: 10vw;
+  height: 10vw;
 }
 
 #playText {
-  font-size: 40px;
+  font-size: 10vw;
   font-family: "jersey10";
   color: white;
 }
 
 #playUnderline {
-  color: white;
-  /* width: ; */
+  background-color: white;
+  width: 26.5vw;
   height: 2px;
+  position: relative;
+  left: 9px;
 }
 
 #companyMembers {
@@ -92,7 +119,7 @@
 }
 
 .companyMember {
-  font-size: 12px;
+  font-size: 3vw;
   color: white;
 }
 
