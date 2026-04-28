@@ -48,7 +48,7 @@
 
 #startViewTitle {
   font-family: "bodoni";
-  font-size: 54px;
+  font-size: 38px;
   color: white;
   margin: 0;
 }
@@ -311,6 +311,7 @@ main {
   align-items: center;
   padding: 15px 10px;
 }
+
 #selectMessageBox {
   border: 2px solid var(--lightgray);
   border-radius: 20px;
@@ -320,14 +321,17 @@ main {
   display: flex;
   justify-content: space-between;
 }
+
 #selectMessageBoxSend {
   flex: 0 1 0;
   margin: 0 10px;
 }
+
 #selectMessageBox p {
   color: white;
   max-width: 150px;
 }
+
 #selectMessageOne,
 #selectMessageTwo {
   align-self: center;
