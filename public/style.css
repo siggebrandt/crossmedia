@@ -214,7 +214,8 @@ h4 {
 }
 
 body {
-  max-width: 500px;
+  min-width: 320px;
+  max-width: 480px;
   margin: auto;
   max-height: 100vh;
   overflow: hidden;
