@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
+@font-face {
+  font-family: "bodoni";
+  src: url("fonts/BodoniModaSC-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "jersey10";
+  src: url("fonts/Jersey10-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +24,84 @@
   font-size: 0.98em;
 }
 
+#startView {
+  background-image: url(images/Johannez\ shady.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 100vh;
+}
+
+#companyName {
+  /* font-family: ; */
+  font-size: 12px;
+  color: white;
+  position: relative;
+  top: 20px;
+}
+
+#startViewTitle {
+  font-family: "bodoni";
+  font-size: 70px;
+  color: white;
+  margin: 0;
+}
+
+#startButton {
+  display: flex;
+  flex-direction: column;
+}
+
+#playIconAndTextContainer {
+  display: flex;
+  align-items: center;
+}
+
+#playIcon {
+  background-image: url(icons/playicon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 54px;
+  height: 54px;
+}
+
+#playText {
+  font-size: 50px;
+  font-family: "jersey10";
+  color: white;
+}
+
+#playUnderline {
+  color: white;
+  /* width: ; */
+  height: 2px;
+}
+
+#companyMembers {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+
+.companyMember {
+  font-size: 12px;
+  color: white;
+}
+
 #messageView {
   display: none;
   background: var(--black);
 }
 
 #allMessagesView {
-  display: flex;
+  display: none;
   flex-direction: column;
   /* width: 100vw;
   height: 100vh; */
