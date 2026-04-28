@@ -101,8 +101,12 @@ h4 {
   background-image: url(icons/contacticon.svg);
 }
 
+#bodil {
+  background-image: url(images/bodil.jpg);
+}
+
 #johannez {
-  background-image: url(../../../../Desktop/Johannez\ shady.png);
+  background-image: url(images/Johannez\ shady.png);
 }
 
 /* - Färg Variabler - */
