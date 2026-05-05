@@ -60,13 +60,6 @@
   margin: 0;
 }
 
-#startButton {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 #playButton:hover #playIconAndTextContainer {
   transform: scale(1.05);
 }
@@ -93,6 +86,10 @@
 
 #playButton:hover #playUnderline {
   background-color: var(--blue);
+}
+
+#playButton:active #playUnderline {
+  background-color: var(--darkerblue);
 }
 
 #playIconAndTextContainer {
@@ -133,6 +130,7 @@
 .companyMember {
   font-size: 3vw;
   color: white;
+  opacity: 0;
 }
 
 #messageView {
@@ -237,6 +235,8 @@ h4 {
 :root {
   --blue: #0078ff;
   /* blå bubble */
+  --darkerblue: #003066;
+  /* vid click */
   --black: #000000;
   /* bakgrund */
   --gray: #262629;
