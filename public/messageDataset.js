@@ -63,6 +63,18 @@ const messageData = [
       {
         id: 3,
         text: "Ok jag gör det"
+      },
+      {
+        id: 4,
+        text: "Berätta för Anna och släpp hemligheten"
+      },
+      {
+        id: 5,
+        text: "Säg till Anna att du vägrar berätta vad du hittat "
+      },
+      {
+        id: 6,
+        text: "Berätta för Johannes att du vet om hans hemlighet"
       }
     ],
   },
