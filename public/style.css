@@ -80,6 +80,10 @@
   transform: scale(1.05);
 }
 
+#playButton:active #playUnderline {
+  transform: scale(0.95);
+}
+
 #playButton:hover {
   transform: scale(1.05);
 }
@@ -235,7 +239,7 @@ h4 {
 :root {
   --blue: #0078ff;
   /* blå bubble */
-  --darkerblue: #003066;
+  --darkerblue: #004ca2;
   /* vid click */
   --black: #000000;
   /* bakgrund */
