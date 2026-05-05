@@ -71,6 +71,18 @@
   transform: scale(1.05);
 }
 
+#playButton:active #playIconAndTextContainer {
+  transform: scale(0.95);
+}
+
+#playButton:active #playIconAndTextContainer #playText {
+  color: var(--lightgray);
+}
+
+#playButton:active #playIconAndTextContainer #playIcon {
+  background-image: url(icons/playbuttonactive.svg);
+}
+
 #playButton:hover #playUnderline {
   transform: scale(1.05);
 }
