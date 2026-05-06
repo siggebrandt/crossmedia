@@ -32,7 +32,7 @@
 }
 
 #startView {
-  background-image: url(images/testjohan.png);
+  background-image: url(images/image\ 24.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -46,16 +46,20 @@
   padding: 10px 0;
 }
 
+#titleContainer {
+  margin-top: 20px;
+}
+
 #companyName {
   font-size: 3vw;
   color: white;
   position: relative;
-  top: 15px;
+  top: 7.5px;
 }
 
 #startViewTitle {
   font-family: "bodoni";
-  font-size: 15vw;
+  font-size: 7.5vw;
   color: white;
   margin: 0;
 }
@@ -118,6 +122,9 @@
 
 #playUnderline {
   background-color: white;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 10px 30px rgba(255, 255, 255, 0.6);
   width: 26.5vw;
   height: 2px;
   position: relative;
