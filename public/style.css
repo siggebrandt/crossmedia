@@ -389,6 +389,12 @@ main {
 #selectMessageOne,
 #selectMessageTwo {
   align-self: center;
+}
+
+.codeInput {
+  width: 20px;
+  height: 80%;
+}
   background-color: var(--darkerblue);
   cursor: pointer;
   border-radius: 10px;
