@@ -398,6 +398,11 @@ main {
 .codeInput {
   width: 20px;
   height: 100%;
+  text-align: center;
+}
+
+.colon {
+  margin: 0 -17px;
 }
 
 .oneMessageOption {
