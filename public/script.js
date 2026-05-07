@@ -1,20 +1,3 @@
-const messages = [
-  {
-    name: "anna",
-    messages: [
-      {
-        id: 1,
-        text: "Jag har fått tips att Johannes Karlsson har något fuffens på gång...",
-      },
-      { id: 2, text: "hej" },
-    ],
-  },
-  {
-    name: "player",
-    messages: [{ id: 1, text: "Ja" }],
-  },
-];
-
 const startView = document.getElementById("startView");
 const messageView = document.getElementById("messageView");
 const allMessagesView = document.getElementById("allMessagesView");
@@ -48,16 +31,6 @@ headerBack.addEventListener("click", function () {
   allMessagesView.style.display = "block";
 });
 
-function timeNow() {
-  const time = new Date();
-  const timeString = time.toLocaleTimeString("sv-SE", {
-    hour: "2-digit",
-    minute: "2-digit",
-  });
-
-  return timeString;
-}
-
 function timeOnMessage(messagerDiv) {
   const timeNow = new Date();
   const timeString = timeNow.toLocaleTimeString("sv-SE", {
@@ -67,11 +40,23 @@ function timeOnMessage(messagerDiv) {
 
   messagerDiv.textContent = timeString;
 }
-
-NewMessage("anna", 1); // anna meddelande 1
-NewMessage("player", 1); // player meddelande 1
-
 timeOnMessage(timeUnknownMessanger);
+
+
+function TimerToNextMessage(minutesToWait, user, messageID) {
+  const startTime = new Date();
+  setTimeout(
+    () => {
+      const ms = Date.now() - startTime;
+      NewMessage(user, messageID);
+
+      console.log(`seconds elapsed = ${Math.floor(ms / 1000)}`);
+      // x minuter
+    },
+    minutesToWait * 60 /* minutes */ * 1000,
+  );
+}
+TimerToNextMessage(1, "anna", 6);
 
 function NewMessage(userSender, messageID) {
   const chatWindow = document.querySelector("#chatWindow");
@@ -84,6 +69,8 @@ function NewMessage(userSender, messageID) {
   message.textContent = foundMessage.text;
   chatWindow.appendChild(message);
 }
+NewMessage("anna", 1); // anna meddelande 1
+NewMessage("player", 1); // player meddelande 1
 
 let status = false;
 let codeInputs = [];
