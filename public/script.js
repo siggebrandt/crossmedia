@@ -62,7 +62,7 @@ function NewMessage(userSender, messageID) {
   const chatWindow = document.querySelector("#chatWindow");
   const message = document.createElement("span");
 
-  const user = messages.find((u) => u.name === userSender);
+  const user = messageData.find((u) => u.name === userSender);
   const foundMessage = user.messages.find((m) => m.id === messageID);
 
   message.classList.add(userSender === "player" ? "chatMe" : "chatThey");
