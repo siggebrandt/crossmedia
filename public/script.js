@@ -31,6 +31,7 @@ const headerBack = document.querySelector("#headerBack");
 const selectMessageBox = document.getElementById("selectMessageBox");
 const selectMessageOne = document.getElementById("selectMessageOne");
 const selectMessageTwo = document.getElementById("selectMessageTwo");
+const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
 
 playButton.addEventListener("click", function () {
   startView.style.display = "none";
@@ -84,16 +85,47 @@ function NewMessage(userSender, messageID) {
   chatWindow.appendChild(message);
 }
 
-function addCodeInputToMessageBox(amount) {
-  selectMessageBox.innerHTML = "";
+let status = false;
+let codeInputs = [];
 
-  for (let i = 0; i < amount; i++) {
-    const input = document.createElement("input");
-    input.classList.add("codeInput");
-    selectMessageBox.append(input);
+function addCodeInputToMessageBox(code, length) {
+  selectMessageBox.innerHTML = "";
+  codeInputs = [];
+
+  for (let i = 0; i < length; i++) {
+    if (i == 2 && code[2] == ":") {
+      const p = document.createElement("p");
+      p.textContent = ":";
+      selectMessageBox.append(p);
+
+    } else {
+      const input = document.createElement("input");
+      input.classList.add("codeInput");
+      selectMessageBox.append(input);
+      codeInputs.push(input);
+    }
   }
 }
 
+function checkCode(code) {
+  let password = true;
+
+  for (let i = 0; i < codeInputs.length; i++) {
+    if (codeInputs[i].value !== code[i]) {
+      password = false;
+      break;
+    }
+  }
+
+  console.log(password); /* ta bort sen */
+};
+
+
+
 selectMessageOne.addEventListener("click", function () {
-  addCodeInputToMessageBox(6);
+  addCodeInputToMessageBox(codes[1], codes[1].length);
+})
+
+selectMessageBoxSend.addEventListener("click", function () {
+  checkCode(codes[1]);
 })
