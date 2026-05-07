@@ -1,8 +1,10 @@
 const startView = document.getElementById("startView");
+const loreView = document.getElementById("loreView");
 const messageView = document.getElementById("messageView");
 const allMessagesView = document.getElementById("allMessagesView");
 
 const playButton = document.getElementById("playButton");
+const playIconLore = document.getElementById("playIconLore")
 
 const messagesAnna = document.querySelector("#messagesAnna");
 const messagesBodil = document.querySelector("#messagesBodil");
@@ -18,7 +20,12 @@ const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
 
 playButton.addEventListener("click", function () {
   startView.style.display = "none";
-  allMessagesView.style.display = "block";
+  loreView.style.display = "flex";
+});
+
+playIconLore.addEventListener("click", function () {
+  loreView.style.display = "none";
+  allMessagesView.style.display = "flex";
 });
 
 messagesAnna.addEventListener("click", function () {
