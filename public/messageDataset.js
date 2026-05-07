@@ -52,6 +52,7 @@ const messageData = [
   {
     name: "player",
     messages: [
+      //
       {
         id: 1,
         text: "Ja det gör jag, ooh spännande jag löser",
@@ -60,10 +61,12 @@ const messageData = [
         id: 2,
         text: "Ja det gör jag men nä vill inte gräva i hans business!",
       },
+      //
       {
         id: 3,
         text: "Ok jag gör det"
       },
+      //
       {
         id: 4,
         text: "Berätta för Anna och släpp hemligheten"
