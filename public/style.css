@@ -401,6 +401,10 @@ main {
   text-align: center;
 }
 
+.colon {
+  margin: 0 -17px;
+}
+
 .oneMessageOption {
   padding: 15px 0;
 }

@@ -95,6 +95,7 @@ function addCodeInputToMessageBox(code, length) {
   for (let i = 0; i < length; i++) {
     if (i == 2 && code[2] == ":") {
       const p = document.createElement("p");
+      p.classList.add("colon");
       p.textContent = ":";
       selectMessageBox.append(p);
 
@@ -109,23 +110,25 @@ function addCodeInputToMessageBox(code, length) {
 
 function checkCode(code) {
   let password = true;
+  code = code.replace(":", "");
 
   for (let i = 0; i < codeInputs.length; i++) {
-    if (codeInputs[i].value !== code[i]) {
+    if (codeInputs[i].value !== code[i].toLowerCase()) {
       password = false;
       break;
     }
   }
 
   console.log(password); /* ta bort sen */
+  return password;
 };
 
 
 
 selectMessageOne.addEventListener("click", function () {
-  addCodeInputToMessageBox(codes[1], codes[1].length);
+  addCodeInputToMessageBox(codes[0], codes[0].length);
 })
 
 selectMessageBoxSend.addEventListener("click", function () {
-  checkCode(codes[1]);
+  checkCode(codes[0]);
 })
