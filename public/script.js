@@ -35,7 +35,7 @@ const selectMessageTwo = document.getElementById("selectMessageTwo");
 playButton.addEventListener("click", function () {
   startView.style.display = "none";
   allMessagesView.style.display = "block";
-})
+});
 
 messagesAnna.addEventListener("click", function () {
   messageView.style.display = "block";
