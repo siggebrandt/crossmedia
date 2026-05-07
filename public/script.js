@@ -29,9 +29,9 @@ const timeUnknownMessanger = document.querySelector("#timeUnknownMessanger");
 const headerBack = document.querySelector("#headerBack");
 
 playButton.addEventListener("click", function () {
-  startView.style.display = "none"
-  allMessagesView.style.display = "block"
-})
+  startView.style.display = "none";
+  allMessagesView.style.display = "block";
+});
 
 messagesAnna.addEventListener("click", function () {
   messageView.style.display = "block";
