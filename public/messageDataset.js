@@ -1,6 +1,6 @@
 const messageData = [
   {
-    name: "anna",
+    name: "Anna",
     messages: [
       {
         id: 1,
@@ -8,11 +8,11 @@ const messageData = [
       },
       {
         id: 22,
-        text: "Driver du allt jag gjort för dig, men vill du inte så hittar jag någon annan. Men då kan du skita i att dyka upp på måndag…",
+        text: "Driver du allt jag gjort för dig, men vill du inte så hittar jag någon annan. Men då kan du skita i att dyka upp på måndag…"
       },
       {
         id: 2,
-        text: "Du är bäääst!",
+        text: "Du är bäääst!"
       },
       // spelaren svarar
       {
@@ -64,21 +64,21 @@ const messageData = [
       //
       {
         id: 3,
-        text: "Ok jag gör det",
+        text: "Ok jag gör det"
       },
       //
       {
         id: 4,
-        text: "Berätta för Anna och släpp hemligheten",
+        text: "Berätta för Anna och släpp hemligheten"
       },
       {
         id: 5,
-        text: "Säg till Anna att du vägrar berätta vad du hittat ",
+        text: "Säg till Anna att du vägrar berätta vad du hittat "
       },
       {
         id: 6,
-        text: "Berätta för Johannes att du vet om hans hemlighet",
-      },
+        text: "Berätta för Johannes att du vet om hans hemlighet"
+      }
     ],
   },
 ];
