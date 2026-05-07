@@ -1,6 +1,6 @@
 const messageData = [
   {
-    name: "Anna",
+    name: "anna",
     messages: [
       {
         id: 1,
