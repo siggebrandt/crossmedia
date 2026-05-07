@@ -370,6 +370,7 @@ main {
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #selectMessageBoxSend {
@@ -385,4 +386,9 @@ main {
 #selectMessageOne,
 #selectMessageTwo {
   align-self: center;
+}
+
+.codeInput {
+  width: 20px;
+  height: 80%;
 }

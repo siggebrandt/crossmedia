@@ -28,9 +28,13 @@ const timeUnknownMessanger = document.querySelector("#timeUnknownMessanger");
 
 const headerBack = document.querySelector("#headerBack");
 
+const selectMessageBox = document.getElementById("selectMessageBox");
+const selectMessageOne = document.getElementById("selectMessageOne");
+const selectMessageTwo = document.getElementById("selectMessageTwo");
+
 playButton.addEventListener("click", function () {
-  startView.style.display = "none"
-  allMessagesView.style.display = "block"
+  startView.style.display = "none";
+  allMessagesView.style.display = "block";
 })
 
 messagesAnna.addEventListener("click", function () {
@@ -42,6 +46,16 @@ headerBack.addEventListener("click", function () {
   messageView.style.display = "none";
   allMessagesView.style.display = "block";
 });
+
+function timeNow() {
+  const time = new Date();
+  const timeString = time.toLocaleTimeString("sv-SE", {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
+
+  return timeString;
+}
 
 function timeOnMessage(messagerDiv) {
   const timeNow = new Date();
@@ -69,3 +83,17 @@ function NewMessage(userSender, messageID) {
   message.textContent = foundMessage.text;
   chatWindow.appendChild(message);
 }
+
+function addCodeInputToMessageBox(amount) {
+  selectMessageBox.innerHTML = "";
+
+  for (let i = 0; i < amount; i++) {
+    const input = document.createElement("input");
+    input.classList.add("codeInput");
+    selectMessageBox.append(input);
+  }
+}
+
+selectMessageOne.addEventListener("click", function () {
+  addCodeInputToMessageBox(6);
+})
