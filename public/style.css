@@ -149,18 +149,49 @@
 }
 
 #loreView {
-  display: none;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 20px;
   width: 100%;
   height: 100vh;
   padding: 10px 0;
   background-color: black;
   color: white;
+  background-image: url(images/image\ 24.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#loreText {
+#loreView {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.05)),
+    url("images/image\ 24.png");
+}
+
+
+.view {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 3s ease;
+}
+
+.view.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#loreTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.loreText {
   font-size: 14px;
   text-align: center;
   margin: 0 15vw;
@@ -169,8 +200,8 @@
 #playIconLore {
   width: 15vw;
   height: 15vw;
-  margin-bottom: 20px;
   padding: 10.75px 0;
+  margin-bottom: 20px;
 }
 
 #playIconLore:hover {
@@ -306,6 +337,7 @@ body {
   margin: auto;
   min-height: 100dvh;
   overflow: hidden;
+  background-color: var(--black);
 }
 
 /* -- H E A D E R -- */

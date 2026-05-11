@@ -19,8 +19,10 @@ const selectMessageTwo = document.getElementById("selectMessageTwo");
 const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
 
 playButton.addEventListener("click", function () {
-  startView.style.display = "none";
-  loreView.style.display = "flex";
+  /* startView.style.display = "none";
+   loreView.style.display = "flex"; */
+  startView.classList.remove("active");
+  loreView.classList.add("active");
 });
 
 playIconLore.addEventListener("click", function () {
