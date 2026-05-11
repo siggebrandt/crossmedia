@@ -31,11 +31,14 @@
   font-size: 0.98em;
 }
 
-#startView {
+.bodyJohannes {
   background-image: url(images/image\ 24.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#startView {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -105,8 +108,7 @@
   align-items: center;
 }
 
-#playIcon,
-#playIconLore {
+#playIcon {
   background-image: url(icons/playicon.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -167,17 +169,16 @@
 
 #loreView {
   background-image:
-    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.05)),
+    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6)),
     url("images/image\ 24.png");
 }
-
 
 .view {
   position: absolute;
   inset: 0;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 3s ease;
+  transition: opacity 1.2s ease;
 }
 
 .view.active {
@@ -198,17 +199,21 @@
 }
 
 #playIconLore {
+  background-image: url(icons/playbuttongray.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 15vw;
   height: 15vw;
   padding: 10.75px 0;
   margin-bottom: 20px;
 }
 
-#playIconLore:hover {
+.playIconLorePressable:hover {
   transform: scale(1.1);
 }
 
-#playIconLore:active {
+.playIconLorePressable:active {
   transform: scale(0.95);
   background-image: url(icons/playbuttonactive.svg);
 }
