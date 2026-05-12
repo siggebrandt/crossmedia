@@ -3,5 +3,8 @@ const choiceContainer = document.getElementById("choiceContainer");
 
 setTimeout(() => {
     jAndTContainer.classList.remove("active");
-    choiceContainer.classList.add("active");
 }, 10000);
+
+setTimeout(() => {
+    choiceContainer.classList.add("active");
+}, 11000)
