@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "playfair display";
+    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
 body {
     min-width: 320px;
     max-width: 480px;
@@ -135,4 +140,47 @@ body {
 .view.active {
     opacity: 1;
     pointer-events: auto;
+}
+
+#toldAnnaContainer,
+#refusedAnnaContainer,
+#toldJohannesContainer {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    padding: 10px;
+}
+
+.top {
+    padding-top: 20px;
+}
+
+.smallText,
+.bigText {
+    font-family: "playfair display";
+    text-align: center;
+    margin: 0;
+}
+
+.smallText {
+    font-size: 20px;
+}
+
+.bigText {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.articlePicture {
+    background-image: url(images/IMG_6021.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
