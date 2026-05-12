@@ -1,4 +1,5 @@
-// SELECTORS
+const body = document.querySelector("body");
+
 const startView = document.getElementById("startView");
 const loreView = document.getElementById("loreView");
 const messageView = document.getElementById("messageView");
@@ -21,15 +22,26 @@ const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
 
 // PLAY BUTTONS
 playButton.addEventListener("click", function () {
-  startView.style.display = "none";
-  loreView.style.display = "flex";
+  /* startView.style.display = "none";
+   loreView.style.display = "flex"; */
+  startView.classList.remove("active");
+
+  setTimeout(() => {
+    loreView.classList.add("active");
+  }, 800);
+
+  setTimeout(() => {
+    playIconLore.style.backgroundImage = "url(icons/playicon.svg)";
+    playIconLore.classList.add("playIconLorePressable");
+    playIconLore.addEventListener("click", function () {
+      body.classList.remove("bodyJohannes")
+      loreView.style.display = "none";
+      allMessagesView.style.display = "flex";
+      StartGame();
+    });
+  }, 8000)
 });
 
-playIconLore.addEventListener("click", function () {
-  loreView.style.display = "none";
-  allMessagesView.style.display = "flex";
-  StartGame();
-});
 
 messagesAnna.addEventListener("click", function () {
   messageView.style.display = "block";
