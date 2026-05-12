@@ -51,6 +51,7 @@
 
 .titleContainer {
   margin-top: 20px;
+  user-select: none;
 }
 
 .companyName {
@@ -69,6 +70,7 @@
 
 #playButton:hover #playIconAndTextContainer {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 #playButton:active #playIconAndTextContainer {
@@ -113,6 +115,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
 }
 
 #playIcon {
@@ -196,6 +199,7 @@
   font-size: 14px;
   text-align: center;
   margin: 0 15vw;
+  user-select: none;
 }
 
 #playIconLore {
@@ -304,7 +308,7 @@ h4 {
   border-radius: 50%;
 }
 
-#unknownProfilePicture {
+#annaProfilePicture {
   background-image: url(icons/contacticon.svg);
 }
 
@@ -459,10 +463,12 @@ main {
 #selectMessageBox p {
   color: white;
   text-align: center;
+  font-size: 12px;
+  padding: 2px;
 }
 
-#selectMessageOne,
-#selectMessageTwo {
+#selectMessage1,
+#selectMessage2 {
   align-self: center;
   background-color: var(--darkerblue);
   cursor: pointer;
@@ -477,9 +483,12 @@ main {
 }
 
 .colon {
-  margin: 0 -17px;
+  margin: 0 -30px;
 }
 
 .oneMessageOption {
-  padding: 15px 0;
+  padding: 10px 0;
+}
+#selectMessageBox p {
+  color: var(--lightgray);
 }
