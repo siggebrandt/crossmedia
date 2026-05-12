@@ -1,0 +1,95 @@
+body {
+    min-width: 320px;
+    max-width: 480px;
+    margin: auto;
+    min-height: 100dvh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#jAndTContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    max-width: 480px;
+    margin: auto;
+    min-height: 100dvh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#jAndT {
+    background-image: url(images/jt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 60vh;
+}
+
+#choiceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+    max-width: 480px;
+    margin: auto;
+    min-height: 100dvh;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    gap: 20px;
+}
+
+#choiceContainer p {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    text-align: center;
+}
+
+#choiceButtonsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.choiceButton {
+    padding: 10px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    width: 60vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.choiceButton:hover {
+    background-color: #333;
+}
+
+.choiceButton:active {
+    background-color: #262626;
+    transform: scale(0.9);
+}
+
+.view {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.2s ease;
+}
+
+.view.active {
+    opacity: 1;
+    pointer-events: auto;
+}
