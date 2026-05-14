@@ -67,7 +67,7 @@ body {
 
 .choiceButton {
     padding: 10px;
-    /* background-color: #1a1a1a; */
+    background-color: #1a1a1a;
     border-radius: 10px;
     width: 60vw;
     height: 5vh;
@@ -86,6 +86,7 @@ body {
     transform: scale(0.95);
 }
 
+/*
 #redButton {
     background-color: #330808;
     box-shadow: 0 5px 10px rgba(120, 35, 35, 0.45);
@@ -127,7 +128,7 @@ body {
 #greenButton:active,
 #blueButton:active {
     transform: scale(0.95);
-}
+} */
 
 .view {
     position: absolute;
