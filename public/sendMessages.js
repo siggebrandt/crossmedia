@@ -174,9 +174,11 @@ async function StartGame() {
   await sleep(800);
   NewMessage("anna", 8);
   await sleep(1500);
+  document.querySelector("#selectMessageBox").innerHTML =
+    `<p>inväntar svar från anna</p>`;
 
   // Vänta 20 minuter, sedan kodinmatning 2: 2006
-  await waitUntil(Date.now() + 1 * 60 * 1000);
+  await waitUntil(Date.now() + 10 * 60 * 1000); // 10 min
   console.log("1 minut");
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
@@ -192,7 +194,8 @@ async function StartGame() {
   await waitForCorrectCode(codes[2]);
 
   // Slutval
-  await sleep(1500);
+  await sleep(5500);
+  window.location.replace("ending.html"); /* 
   UserSendMessage([GetUserMessage(4), GetUserMessage(5), GetUserMessage(6)]);
   const endChoice = await waitForPlayerChoice();
 
@@ -205,7 +208,7 @@ async function StartGame() {
   } else if (endChoice === "selectMessage3") {
     NewMessage("player", 6);
     // TODO: visa tidningsuppslag — Johannes bryter tystnaden
-  }
+  } */
 }
 
 function GetUserMessage(id) {

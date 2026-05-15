@@ -16,8 +16,8 @@ const timeAnnaMessanger = document.querySelector("#timeAnnaMessanger");
 const headerBack = document.querySelector("#headerBack");
 
 const selectMessageBox = document.getElementById("selectMessageBox");
-const selectMessageOne = document.getElementById("selectMessageOne");
-const selectMessageTwo = document.getElementById("selectMessageTwo");
+/* const selectMessageOne = document.getElementById("selectMessageOne");
+const selectMessageTwo = document.getElementById("selectMessageTwo"); */
 const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
 
 // PLAY BUTTONS
@@ -34,14 +34,13 @@ playButton.addEventListener("click", function () {
     playIconLore.style.backgroundImage = "url(icons/playicon.svg)";
     playIconLore.classList.add("playIconLorePressable");
     playIconLore.addEventListener("click", function () {
-      body.classList.remove("bodyJohannes")
+      body.classList.remove("bodyJohannes");
       loreView.style.display = "none";
       allMessagesView.style.display = "flex";
       StartGame();
     });
-  }, 8000)
+  }, 8000);
 });
-
 
 messagesAnna.addEventListener("click", function () {
   messageView.style.display = "block";
@@ -78,20 +77,27 @@ function TimerToNextMessage(minutesToWait, user, messageID) {
   );
 }
 
-function NewMessage(userSender, messageID) {
+function NewMessage(userSender, messageID, customText = null) {
   const chatWindow = document.querySelector("#chatWindow");
   const message = document.createElement("span");
 
-  const user = messageData.find((u) => u.name === userSender);
-  const foundMessage = user.messages.find((m) => m.id === messageID);
+  let text;
+
+  if (customText !== null) {
+    text = customText;
+  } else {
+    const user = messageData.find((u) => u.name === userSender);
+    const foundMessage = user.messages.find((m) => m.id === messageID);
+    text = foundMessage.text;
+  }
 
   message.classList.add(userSender === "player" ? "chatMe" : "chatThey");
-
-  message.textContent = foundMessage.text;
+  message.textContent = text;
   chatWindow.appendChild(message);
   message.scrollIntoView({ behavior: "smooth", block: "end" });
-  // messagebox
-  UpdateMessageText(userSender, foundMessage.text);
+
+  UpdateMessageText(userSender, text);
+
   if (userSender == "anna") {
     timeOnMessage(timeAnnaMessanger);
   } else if (userSender == "bodil") {
@@ -140,8 +146,10 @@ function addCodeInputToMessageBox(code, length) {
   selectMessageBox.innerHTML = "";
   codeInputs = [];
 
+  const colonIndex = code.indexOf(":");
+
   for (let i = 0; i < length; i++) {
-    if (i == 2 && code[2] == ":") {
+    if (i === colonIndex && colonIndex !== -1) {
       const p = document.createElement("p");
       p.classList.add("colon");
       p.textContent = ":";
@@ -179,10 +187,11 @@ function checkCode(code) {
   return password;
 }
 
-selectMessageOne.addEventListener("click", function () {
+/* selectMessageOne.addEventListener("click", function () {
   addCodeInputToMessageBox(codes[0], codes[0].length);
-});
+}); */
 
-selectMessageBoxSend.addEventListener("click", function () {
+/* selectMessageBoxSend.addEventListener("click", function () {
   checkCode(codes[0]);
 });
+ */

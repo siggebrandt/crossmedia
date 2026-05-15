@@ -21,7 +21,7 @@ const messageData = [
       // spelaren svarar
       {
         id: 4, //GLÖM INTE LÄGGA IN VART KONTORET ÄR HÄR!!!!
-        text: "Bra! Johannes kontor står tomt nu i 20 min medan han är på lunch. Kontoret ligger på /* INSERT KONTORSLOKAL HÄR */, ta dig dit och se om du kan hitta någon ledtråd! Du kan väl höra av dig om du hittar något. Som vanligt behöver du ta bild på allting du hittar och kom ihåg att lämna allt precis så som du hittade det så han inte kommer på dig, tänk på din journalistiska integritet. P.S. det kan vara bra att ta bild på många potentiella ledtrådar.",
+        text: "Bra! Johannes kontor står tomt nu i 20 min medan han är på lunch. Kontoret ligger på (bordet), ta dig dit och se om du kan hitta någon ledtråd! Du kan väl höra av dig om du hittar något. Som vanligt behöver du ta bild på allting du hittar och kom ihåg att lämna allt precis så som du hittade det så han inte kommer på dig, tänk på din journalistiska integritet. P.S. det kan vara bra att ta bild på många potentiella ledtrådar.",
       },
       // kodinmatning
       {

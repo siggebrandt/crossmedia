@@ -486,9 +486,9 @@ main {
   margin: 0 -30px;
 }
 
-.oneMessageOption {
+.oneMessageButton {
   padding: 10px 0;
 }
-#selectMessageBox p {
+/* #selectMessageBox p {
   color: var(--lightgray);
-}
+} */

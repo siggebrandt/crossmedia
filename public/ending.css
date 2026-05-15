@@ -1,89 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  border: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 0.98em;
+}
+
 @font-face {
-    font-family: "playfair display";
-    src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
+  font-family: "playfair display";
+  src: url(fonts/PlayfairDisplay-VariableFont_wght.ttf);
 }
 
 body {
-    min-width: 320px;
-    max-width: 480px;
-    margin: auto;
-    min-height: 100dvh;
-    overflow: hidden;
-    background-color: black;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  min-height: 100dvh;
+  overflow: hidden;
+  background-color: black;
 }
 
 #jAndTContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 320px;
-    max-width: 480px;
-    margin: auto;
-    min-height: 100dvh;
-    overflow: hidden;
-    background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  min-height: 100dvh;
+  overflow: hidden;
+  background-color: black;
 }
 
 #jAndT {
-    background-image: url(images/johannestompa\ 1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 90vw;
-    height: 60vh;
+  background-image: url(images/johannestompa\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 90vw;
+  height: 60vh;
 }
 
 #choiceContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width: 320px;
-    max-width: 480px;
-    margin: auto;
-    min-height: 100dvh;
-    overflow: hidden;
-    background-color: black;
-    color: white;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  max-width: 480px;
+  margin: auto;
+  min-height: 100dvh;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  gap: 20px;
 }
 
 #choiceContainer p {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80vw;
-    text-align: center;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  text-align: center;
 }
 
 #choiceButtonsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
 }
 
 .choiceButton {
-    padding: 10px;
-    background-color: #1a1a1a;
-    border-radius: 10px;
-    width: 60vw;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  width: 60vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .choiceButton:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 .choiceButton:active {
-    background-color: #262626;
-    transform: scale(0.95);
+  background-color: #262626;
+  transform: scale(0.95);
 }
 
 /*
@@ -131,57 +141,57 @@ body {
 } */
 
 .view {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 1.2s ease;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.2s ease;
 }
 
 .view.active {
-    opacity: 1;
-    pointer-events: auto;
+  opacity: 1;
+  pointer-events: auto;
 }
 
 #toldAnnaContainer,
 #refusedAnnaContainer,
 #toldJohannesContainer {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    background-color: white;
-    color: black;
-    height: 100vh;
-    padding: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  height: 100vh;
+  padding: 10px;
 }
 
 .top {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .smallText,
 .bigText {
-    font-family: "playfair display";
-    text-align: center;
-    margin: 0;
+  font-family: "playfair display";
+  text-align: center;
+  margin: 0;
 }
 
 .smallText {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .bigText {
-    font-size: 36px;
-    font-weight: 800;
+  font-size: 36px;
+  font-weight: 800;
 }
 
 .articlePicture {
-    background-image: url(images/IMG_6021.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+  background-image: url(images/IMG_6021.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
