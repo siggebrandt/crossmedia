@@ -16,14 +16,10 @@ const timeAnnaMessanger = document.querySelector("#timeAnnaMessanger");
 const headerBack = document.querySelector("#headerBack");
 
 const selectMessageBox = document.getElementById("selectMessageBox");
-/* const selectMessageOne = document.getElementById("selectMessageOne");
-const selectMessageTwo = document.getElementById("selectMessageTwo"); */
 const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
 
 // PLAY BUTTONS
 playButton.addEventListener("click", function () {
-  /* startView.style.display = "none";
-   loreView.style.display = "flex"; */
   startView.classList.remove("active");
 
   setTimeout(() => {
@@ -186,12 +182,3 @@ function checkCode(code) {
   console.log(password); /* ta bort sen */
   return password;
 }
-
-/* selectMessageOne.addEventListener("click", function () {
-  addCodeInputToMessageBox(codes[0], codes[0].length);
-}); */
-
-/* selectMessageBoxSend.addEventListener("click", function () {
-  checkCode(codes[0]);
-});
- */
