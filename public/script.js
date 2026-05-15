@@ -136,49 +136,15 @@ function UserSendMessage(messages) {
 }
 
 let status = false;
-let codeInputs = [];
-
-function addCodeInputToMessageBox(code, length) {
-  selectMessageBox.innerHTML = "";
-  codeInputs = [];
-
-  const colonIndex = code.indexOf(":");
-
-  for (let i = 0; i < length; i++) {
-    if (i === colonIndex && colonIndex !== -1) {
-      const p = document.createElement("p");
-      p.classList.add("colon");
-      p.textContent = ":";
-      selectMessageBox.append(p);
-    } else {
-      const input = document.createElement("input");
-      input.setAttribute("minlength", "1");
-      input.setAttribute("maxlength", "1");
-      input.classList.add("codeInput");
-      input.addEventListener("input", () => {
-        if (input.value.length === 1) {
-          const currentIndex = codeInputs.indexOf(input);
-          const nextInput = codeInputs[currentIndex + 1];
-          if (nextInput) nextInput.focus();
-        }
-      });
-      selectMessageBox.append(input);
-      codeInputs.push(input);
-    }
-  }
-}
+/* let codeInputs = [];
 
 function checkCode(code) {
-  let password = true;
-  code = code.replace(":", "");
+  const correctCode = code.replace(":", "").toUpperCase();
+  const enteredCode = codeInputs
+    .map((input) => input.value)
+    .join("")
+    .toUpperCase();
 
-  for (let i = 0; i < codeInputs.length; i++) {
-    if (codeInputs[i].value !== code[i].toLowerCase()) {
-      password = false;
-      break;
-    }
-  }
-
-  console.log(password); /* ta bort sen */
-  return password;
+  return enteredCode === correctCode;
 }
+ */

@@ -8,7 +8,7 @@ async function StartGame() {
   // Spelaren väljer ja eller nej
   UserSendMessage([GetUserMessage(1), GetUserMessage(2)]);
   let choice = await waitForPlayerChoice();
-  eraseMessageBox();
+  eraseMessageBox("");
 
   // Om spelaren svarar nej blir Anna arg tills de svarar ja
   while (choice === "selectMessage2") {
@@ -31,7 +31,7 @@ async function StartGame() {
   // Kodinmatning 1: OR:7090
   showCodeInput(codes[0]);
   await waitForCorrectCode(codes[0]);
-  eraseMessageBox();
+  eraseMessageBox("inväntar svar från anna");
 
   await sleep(800);
   NewMessage("anna", 5);
@@ -42,14 +42,14 @@ async function StartGame() {
   await sleep(800);
   NewMessage("anna", 8);
   await sleep(1500);
-  eraseMessageBox();
+  eraseMessageBox("inväntar svar från anna");
 
   // Vänta 20 minuter, sedan kodinmatning 2: 2006
   await waitUntil(Date.now() + 1 * 60 * 1000); // 10 min
   console.log("1 minut");
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
-  eraseMessageBox();
+  eraseMessageBox("inväntar svar från anna");
 
   await sleep(1500);
   NewMessage("anna", 9);
@@ -58,7 +58,7 @@ async function StartGame() {
   // Kodinmatning 3: 418
   showCodeInput(codes[2]);
   await waitForCorrectCode(codes[2]);
-  eraseMessageBox();
+  eraseMessageBox("");
 
   // Slutval
   await sleep(5500);
@@ -70,9 +70,8 @@ function GetUserMessage(id) {
   return character.messages.find((m) => m.id === id);
 }
 
-function eraseMessageBox() {
-  document.querySelector("#selectMessageBox").innerHTML =
-    `<p>inväntar svar från anna</p>`;
+function eraseMessageBox(message) {
+  document.querySelector("#selectMessageBox").innerHTML = `<p>${message}</p>`;
 }
 
 // RESTART
@@ -110,6 +109,18 @@ function waitForPlayerChoice() {
   });
 }
 
+let codeInputs = [];
+
+function checkCode(code) {
+  const correctCode = code.replace(":", "").toUpperCase();
+  const enteredCode = codeInputs
+    .map((input) => input.value)
+    .join("")
+    .toUpperCase();
+
+  return enteredCode === correctCode;
+}
+
 function waitForCorrectCode(code) {
   return new Promise((resolve) => {
     const sendBtn = document.getElementById("selectMessageBoxSend");
@@ -119,7 +130,7 @@ function waitForCorrectCode(code) {
 
       if (checkCode(code)) {
         // Rätt kod — skicka som meddelande och fortsätt
-        NewMessage("player", "custom", enteredCode);
+        NewMessage("player", "custom", enteredCode.toUpperCase());
         sendBtn.removeEventListener("click", handler);
         resolve();
       } else {
@@ -145,6 +156,36 @@ function showCodeInput(code) {
     code,
     hasColon ? lengthWithoutColon + 1 : lengthWithoutColon,
   );
+}
+
+function addCodeInputToMessageBox(code, length) {
+  selectMessageBox.innerHTML = "";
+  codeInputs = [];
+
+  const colonIndex = code.indexOf(":");
+
+  for (let i = 0; i < length; i++) {
+    if (i === colonIndex && colonIndex !== -1) {
+      const p = document.createElement("p");
+      p.classList.add("colon");
+      p.textContent = ":";
+      selectMessageBox.append(p);
+    } else {
+      const input = document.createElement("input");
+      input.setAttribute("minlength", "1");
+      input.setAttribute("maxlength", "1");
+      input.classList.add("codeInput");
+      input.addEventListener("input", () => {
+        if (input.value.length === 1) {
+          const currentIndex = codeInputs.indexOf(input);
+          const nextInput = codeInputs[currentIndex + 1];
+          if (nextInput) nextInput.focus();
+        }
+      });
+      selectMessageBox.append(input);
+      codeInputs.push(input);
+    }
+  }
 }
 
 function GetUserMessage(id) {
