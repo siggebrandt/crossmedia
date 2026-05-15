@@ -1,36 +1,7 @@
-/* async function StartGame() {
-  NewMessage("anna", 0);
-  TimerToNextMessage(1, "anna", 22);
-
-  await sleep(2000);
-
-  UserSendMessage(GetPlayerMessage(1));
+function eraseMessageBox() {
+  document.querySelector("#selectMessageBox").innerHTML =
+    `<p>inväntar svar från anna</p>`;
 }
-
-// Lyssna på när sidan blir aktiv igen
-document.addEventListener("visibilitychange", () => {
-  if (document.visibilityState === "visible") {
-    // Sidan är aktiv igen
-  }
-});
-
-NewMessage("anna", 0);
-TimerToNextMessage(1, "anna", 22);
-
-UserSendMessage(GetUserMessage(1));
-
-//UserSendMessage([GetUserMessage(2), GetUserMessage(4)]);
-
-/**
- *
- *
- *
- */
-/* -- Function -- 
-function GetUserMessage(id) {
-  const character = messageData.find((p) => p.name === "player");
-  return character.messages.find((m) => m.id === id);
-}*/
 
 // RESTART
 function sleep(ms) {
@@ -164,6 +135,7 @@ async function StartGame() {
   // Kodinmatning 1: OR:7090
   showCodeInput(codes[0]);
   await waitForCorrectCode(codes[0]);
+  eraseMessageBox();
 
   await sleep(800);
   NewMessage("anna", 5);
@@ -174,14 +146,14 @@ async function StartGame() {
   await sleep(800);
   NewMessage("anna", 8);
   await sleep(1500);
-  document.querySelector("#selectMessageBox").innerHTML =
-    `<p>inväntar svar från anna</p>`;
+  eraseMessageBox();
 
   // Vänta 20 minuter, sedan kodinmatning 2: 2006
   await waitUntil(Date.now() + 10 * 60 * 1000); // 10 min
   console.log("1 minut");
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
+  eraseMessageBox();
 
   await sleep(1500);
   NewMessage("anna", 9);
@@ -192,6 +164,7 @@ async function StartGame() {
   await sleep(1500);
   showCodeInput(codes[2]);
   await waitForCorrectCode(codes[2]);
+  eraseMessageBox;
 
   // Slutval
   await sleep(5500);
