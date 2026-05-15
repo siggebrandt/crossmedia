@@ -12,7 +12,7 @@ const messageData = [
       },
       {
         id: 22,
-        text: "Driver du? Allt jag gjort för dig, men vill du inte så hittar jag någon annan. Men då kan du skita i att dyka upp på måndag…",
+        text: "DRIVER DU? Allt jag gjort för dig, men vill du inte så hittar jag någon annan. Men då kan du skita i att dyka upp på måndag…",
       },
       {
         id: 2,
@@ -81,32 +81,32 @@ const messageData = [
       },
       {
         id: 7,
-        text: "Behöver hjälp hittar inte kod på kontor"
+        text: "Behöver hjälp hittar inte kod på kontor",
       },
       {
         id: 8,
-        text: "Behöver hjälp i Orkanenbiblioteket"
+        text: "Behöver hjälp i Orkanenbiblioteket",
       },
       {
         id: 9,
-        text: "Behöver mer hjälp i Orkanenbiblioteket"
+        text: "Behöver mer hjälp i Orkanenbiblioteket",
       },
       {
         id: 10,
-        text: "Behöver hjälp vid Kranen"
+        text: "Behöver hjälp vid Kranen",
       },
       {
         id: 11,
-        text: "Behöver hjälp med kartan"
+        text: "Behöver hjälp med kartan",
       },
       {
         id: 12,
-        text: "Behöver mer hjälp med kartan"
+        text: "Behöver mer hjälp med kartan",
       },
       {
         id: 13,
-        text: "Behöver hjälp vid Malmö live"
-      }
+        text: "Behöver hjälp vid Malmö live",
+      },
     ],
   },
   {
@@ -114,28 +114,28 @@ const messageData = [
     messages: [
       {
         id: 1,
-        text: "Finns där någon lapp med OR"
+        text: "Finns där någon lapp med OR",
       },
       {
         id: 2,
-        text: "Ta dig till platsen på bilden pucko!"
+        text: "Ta dig till platsen på bilden pucko!",
       },
       {
         id: 3,
-        text: "Scanna qr-koden och leta efter siffror"
+        text: "Scanna qr-koden och leta efter siffror",
       },
       {
         id: 4,
-        text: "Kolla igenom sakerna från kontoret igen. Det kanske finns något där att använda!"
+        text: "Kolla igenom sakerna från kontoret igen. Det kanske finns något där att använda!",
       },
       {
         id: 5,
-        text: "Har du besökt alla tre platser och scannat deras qr-kod?"
+        text: "Har du besökt alla tre platser och scannat deras qr-kod?",
       },
       {
         id: 6,
-        text: "Säg att Johannes skickat dig för att hämta det han glömt på rummet."
-      }
-    ]
-  }
+        text: "Säg att Johannes skickat dig för att hämta det han glömt på rummet.",
+      },
+    ],
+  },
 ];
