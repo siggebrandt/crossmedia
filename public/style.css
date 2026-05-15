@@ -448,7 +448,7 @@ main {
   margin: 0 10px;
   height: 75%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px;
   gap: 20px;
   align-items: center;
@@ -477,7 +477,7 @@ main {
 }
 
 .codeInput {
-  width: 20px;
+  width: 30px;
   height: 100%;
   text-align: center;
 }
