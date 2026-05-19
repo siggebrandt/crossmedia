@@ -20,14 +20,17 @@ setTimeout(() => {
 redButton.addEventListener("click", function () {
     choiceContainer.style.display = "none";
     toldAnnaContainer.style.display = "flex";
+    jAndTContainer.style.alignItems = "flex-end";
 })
 
 greenButton.addEventListener("click", function () {
     choiceContainer.style.display = "none";
     refusedAnnaContainer.style.display = "flex";
+    jAndTContainer.style.alignItems = "flex-end";
 })
 
 blueButton.addEventListener("click", function () {
     choiceContainer.style.display = "none";
     toldJohannesContainer.style.display = "flex";
+    jAndTContainer.style.alignItems = "flex-end";
 })

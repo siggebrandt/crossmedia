@@ -35,7 +35,7 @@ body {
 }
 
 #jAndT {
-  background-image: url(images/johannestompa\ 1.png);
+  background-image: url(images/smygjohan.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,7 +164,6 @@ body {
   background-color: white;
   color: black;
   height: 100vh;
-  padding: 10px;
 }
 
 .top {
@@ -188,10 +187,36 @@ body {
 }
 
 .articlePicture {
-  background-image: url(images/IMG_6021.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+
+#resign {
+  background-image: url(images/johannessur.png);
+}
+
+#annaFired {
+  background-image: url(images/annasparkad.png);
+}
+
+#inLove {
+  background-image: url(images/johannestompa\ 1.png);
+}
+
+.mauNews {
+  background-image: url(images/maunews_logga.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 50px;
+  padding-bottom: 10px;
+}
+
+.articlePictures {
   width: 100%;
   height: 100%;
 }
