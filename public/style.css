@@ -502,8 +502,9 @@ main {
 }
 .chatMessageImage {
   background-image: url("images/mailet.webp");
-  width: 450px;
-  height: 300px;
+  width: 350px;
+  height: 200px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
