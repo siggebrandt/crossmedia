@@ -344,7 +344,7 @@ h4 {
 #mamma {
   background: pink;
 }
-#johannez {
+#erik {
   background: var(--blue);
 }
 
@@ -395,7 +395,7 @@ header img {
 
 main {
   background-color: var(--black);
-  height: calc(100vh - 115px - 110px);
+  height: calc(100vh - 115px - 145px);
   overflow-y: scroll;
 }
 
@@ -449,6 +449,7 @@ main {
   justify-content: space-around;
   align-items: flex-start;
   padding: 15px 10px;
+  margin-bottom: 35px;
 }
 
 #selectMessageBox {
