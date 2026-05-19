@@ -64,7 +64,7 @@ async function StartGame() {
   eraseMessageBox("inväntar svar från anna");
   //await sleep(1500);
 
-  // Vänta 20 minuter, sedan kodinmatning 2: 2006
+  // Vänta, sedan kodinmatning 2: 2006
   await waitUntil(Date.now() + 1 * 60 * 1000); // 10 min
   console.log("1 minut");
   showCodeInput(codes[1]);

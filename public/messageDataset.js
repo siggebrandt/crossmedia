@@ -56,7 +56,7 @@ const messageData = [
       // kodinmatning
       {
         id: 11,
-        text: "mailet.webp",
+        text: " ",
       },
       // anna skickar bild på mail
 

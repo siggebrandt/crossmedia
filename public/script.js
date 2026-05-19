@@ -110,6 +110,9 @@ function NewMessage(userSender, messageID, customText = null) {
   }
 
   message.classList.add(userSender === "player" ? "chatMe" : "chatThey");
+  if (messageID == 11 && userSender == "anna") {
+    message.classList.add("chatMessageImage");
+  }
   message.textContent = text;
   chatWindow.appendChild(message);
   message.scrollIntoView({ behavior: "smooth", block: "end" });
