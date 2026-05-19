@@ -33,7 +33,6 @@ async function StartGame() {
   // Kodinmatning 1: OR:652
   showCodeInput(codes[0]);
   await waitForCorrectCode(codes[0]);
-  //eraseMessageBox("inväntar svar från anna");
 
   await sleep(800);
   NewMessage("anna", 6);
