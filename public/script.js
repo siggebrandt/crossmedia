@@ -157,16 +157,4 @@ function UserSendMessage(messages) {
   });
 }
 
-let status = false;
-/* let codeInputs = [];
-
-function checkCode(code) {
-  const correctCode = code.replace(":", "").toUpperCase();
-  const enteredCode = codeInputs
-    .map((input) => input.value)
-    .join("")
-    .toUpperCase();
-
-  return enteredCode === correctCode;
-}
- */
+//let status = false;

@@ -1,9 +1,9 @@
 async function StartGame() {
   // Anna skickar första meddelanden
   NewMessage("anna", 0);
-  await sleep(1500);
+  await sleep(5000);
   NewMessage("anna", 1);
-  await sleep(1500);
+  await sleep(5000);
 
   // Spelaren väljer ja eller nej
   UserSendMessage([GetUserMessage(1), GetUserMessage(2)]);
@@ -24,25 +24,27 @@ async function StartGame() {
   NewMessage("player", 1);
   await sleep(1500);
   NewMessage("anna", 2);
-  await sleep(1500);
+  await sleep(2500);
   NewMessage("anna", 4);
-  await sleep(1500);
+  await sleep(3500);
+  NewMessage("anna", 5);
+  await sleep(15000);
 
-  // Kodinmatning 1: OR:7090
+  // Kodinmatning 1: OR:652
   showCodeInput(codes[0]);
   await waitForCorrectCode(codes[0]);
-  eraseMessageBox("inväntar svar från anna");
+  //eraseMessageBox("inväntar svar från anna");
 
   await sleep(800);
-  NewMessage("anna", 5);
-  await sleep(800);
   NewMessage("anna", 6);
-  await sleep(800);
+  await sleep(1200);
   NewMessage("anna", 7);
-  await sleep(800);
+  await sleep(8000);
   NewMessage("anna", 8);
-  await sleep(1500);
+  await sleep(1200);
+  NewMessage("anna", 9);
   eraseMessageBox("inväntar svar från anna");
+  //await sleep(1500);
 
   // Vänta 20 minuter, sedan kodinmatning 2: 2006
   await waitUntil(Date.now() + 1 * 60 * 1000); // 10 min
@@ -52,7 +54,7 @@ async function StartGame() {
   eraseMessageBox("inväntar svar från anna");
 
   await sleep(1500);
-  NewMessage("anna", 9);
+  NewMessage("anna", 10);
   await sleep(1500);
 
   // Kodinmatning 3: 418

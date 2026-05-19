@@ -20,29 +20,33 @@ const messageData = [
       },
       // spelaren svarar
       {
-        id: 4, //GLÖM INTE LÄGGA IN VART KONTORET ÄR HÄR!!!!
-        text: "Bra!\nJohannes kontor står tomt nu i 20 min medan han är på lunch. Kontoret ligger på NI:A0414, ta dig dit och se om du kan hitta någon ledtråd! Du kan väl höra av dig om du hittar något. Som vanligt behöver du ta bild på allting du hittar och kom ihåg att lämna allt precis så som du hittade det så han inte kommer på dig, tänk på din journalistiska integritet.\nP.S. det kan vara bra att ta bild på många potentiella ledtrådar.",
+        id: 4,
+        text: "Bra!\nJohannes kontor står tomt nu i 20 min medan han är på lunch. Kontoret ligger på NI:A0414, ta dig dit och se om du kan hitta någon ledtråd!",
+      },
+      {
+        id: 5,
+        text: "Du kan väl höra av dig om du hittar något. Som vanligt behöver du ta bild på allting du hittar och kom ihåg att lämna allt precis så som du hittade det så han inte kommer på dig, tänk på din journalistiska integritet.\nP.S. det kan vara bra att ta bild på många potentiella ledtrådar.",
       },
       // kodinmatning
       {
-        id: 5,
+        id: 6,
         text: "Vafan är det där du har hittat? Det där kan vi ju inte använda till något!!",
       },
       {
-        id: 6,
+        id: 7,
         text: "Eller vänta",
       },
       {
-        id: 7,
+        id: 8,
         text: "Är det inte...",
       },
       {
-        id: 8,
+        id: 9,
         text: "Orkanenbiblioteket??",
       },
       // kodinmatning
       {
-        id: 9,
+        id: 10,
         text: "Vad skumt, bara en flashbacktråd. Hittade du inte något mer på kontoret?",
       },
       // spelaren hittar brevet
@@ -106,6 +110,41 @@ const messageData = [
       {
         id: 13,
         text: "Behöver hjälp vid Malmö live",
+      },
+
+      /**
+       *
+       * BODIL HJÄLP
+       *
+       */
+
+      {
+        id: 101,
+        text: "Behöver hjälp hittar inte kod på kontor",
+      },
+      {
+        id: 102,
+        text: "behöver hjälp orkanenbiblioteket",
+      },
+      {
+        id: 103,
+        text: "Behöver hjälp fortsättning orkanen",
+      },
+      {
+        id: 104,
+        text: "Behöver hjälp kranen",
+      },
+      {
+        id: 105,
+        text: "behöver hjälp karta",
+      },
+      {
+        id: 106,
+        text: "Behöver hjälp karta2",
+      },
+      {
+        id: 107,
+        text: "Behöver hjälp Malmö live:",
       },
     ],
   },
