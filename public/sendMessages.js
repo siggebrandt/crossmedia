@@ -10,20 +10,38 @@ async function StartGame() {
   let choice = await waitForPlayerChoice();
   eraseMessageBox("");
 
-  // Om spelaren svarar nej blir Anna arg tills de svarar ja
+  let playerRespondingToMadAnnaMessageID = 1;
+
+  // Om spelaren svarar nej blir Anna arg
   while (choice === "selectMessage2") {
+    playerRespondingToMadAnnaMessageID = 21;
     NewMessage("player", 2);
     await sleep(1500);
     NewMessage("anna", 22);
     await sleep(1500);
-    UserSendMessage(GetUserMessage(1));
+    UserSendMessage([GetUserMessage(21), GetUserMessage(22)]);
     choice = await waitForPlayerChoice();
+    eraseMessageBox("");
+
+    // Anna ger sig inte förens spelaren svarar ja
+    while (choice === "selectMessage2") {
+      NewMessage("player", 22);
+      await sleep(1500);
+      NewMessage("anna", 23);
+      await sleep(1500);
+      UserSendMessage(GetUserMessage(21));
+      choice = await waitForPlayerChoice();
+      eraseMessageBox("");
+    }
   }
 
   // Spelaren svarade ja
-  NewMessage("player", 1);
-  await sleep(1500);
-  NewMessage("anna", 2);
+  NewMessage("player", playerRespondingToMadAnnaMessageID);
+  if (playerRespondingToMadAnnaMessageID == 1) {
+    await sleep(1500);
+    NewMessage("anna", 2);
+  }
+
   await sleep(2500);
   NewMessage("anna", 4);
   await sleep(3500);
@@ -34,6 +52,7 @@ async function StartGame() {
   showCodeInput(codes[0]);
   await waitForCorrectCode(codes[0]);
 
+  eraseMessageBox("");
   await sleep(800);
   NewMessage("anna", 6);
   await sleep(1200);
@@ -59,6 +78,19 @@ async function StartGame() {
   // Kodinmatning 3: 418
   showCodeInput(codes[2]);
   await waitForCorrectCode(codes[2]);
+  eraseMessageBox("");
+
+  // ANNA SKICKAR BILD
+  await sleep(800);
+  NewMessage("anna", 11);
+  showCodeInput(codes[3]);
+  document.querySelector("#selectMessageBox").style.flexWrap = "wrap";
+  document.querySelector("#selectMessageBox").style.gap = "5px";
+  document.querySelectorAll(".codeInput").forEach((input) => {
+    input.style.width = "20px";
+    input.style.height = "80%";
+  });
+  await waitForCorrectCode(codes[3]);
   eraseMessageBox("");
 
   // Slutval
@@ -134,11 +166,12 @@ function waitForCorrectCode(code) {
         NewMessage("player", "custom", enteredCode.toUpperCase());
         sendBtn.removeEventListener("click", handler);
         resolve();
+        eraseMessageBox(""); //// HÄR!!??
       } else {
         // Fel kod — skicka som meddelande och Anna svarar
         NewMessage("player", "custom", enteredCode);
         setTimeout(() => {
-          NewMessage("anna", "custom", "Det stämmer inte, försök igen!");
+          NewMessage("anna", "custom", "HALLÅ!!! Det är fel?! 🤬");
           // Återställ inputfälten
           codeInputs.forEach((input) => (input.value = ""));
           if (codeInputs[0]) codeInputs[0].focus();

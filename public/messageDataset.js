@@ -15,6 +15,10 @@ const messageData = [
         text: "DRIVER DU? Allt jag gjort för dig, men vill du inte så hittar jag någon annan. Men då kan du skita i att dyka upp på måndag…",
       },
       {
+        id: 23,
+        text: "VADDÅ VÄGRAR?! Jag betalar din lön. Detta är en ORDER. Svara igen.",
+      },
+      {
         id: 2,
         text: "Du är bäääst!",
       },
@@ -49,6 +53,13 @@ const messageData = [
         id: 10,
         text: "Vad skumt, bara en flashbacktråd. Hittade du inte något mer på kontoret?",
       },
+      // kodinmatning
+      {
+        id: 11,
+        text: "mailet.webp",
+      },
+      // anna skickar bild på mail
+
       // spelaren hittar brevet
       // hemligheten avslöjas
     ],
@@ -65,59 +76,24 @@ const messageData = [
         id: 2,
         text: "Ja det gör jag men nä vill inte gräva i hans business!",
       },
+      {
+        id: 21,
+        text: "Jo, jag hjälper dig såklart",
+      },
+      {
+        id: 22,
+        text: "Nej, jag vägrar",
+      },
       //
       {
         id: 3,
         text: "Ok jag gör det",
       },
-      //
-      {
-        id: 4,
-        text: "Berätta för Anna och släpp hemligheten",
-      },
-      {
-        id: 5,
-        text: "Säg till Anna att du vägrar berätta vad du hittat ",
-      },
-      {
-        id: 6,
-        text: "Berätta för Johannes att du vet om hans hemlighet",
-      },
-      {
-        id: 7,
-        text: "Behöver hjälp hittar inte kod på kontor",
-      },
-      {
-        id: 8,
-        text: "Behöver hjälp i Orkanenbiblioteket",
-      },
-      {
-        id: 9,
-        text: "Behöver mer hjälp i Orkanenbiblioteket",
-      },
-      {
-        id: 10,
-        text: "Behöver hjälp vid Kranen",
-      },
-      {
-        id: 11,
-        text: "Behöver hjälp med kartan",
-      },
-      {
-        id: 12,
-        text: "Behöver mer hjälp med kartan",
-      },
-      {
-        id: 13,
-        text: "Behöver hjälp vid Malmö live",
-      },
-
       /**
        *
        * BODIL HJÄLP
        *
        */
-
       {
         id: 101,
         text: "Behöver hjälp hittar inte kod på kontor",
