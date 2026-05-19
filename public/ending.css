@@ -15,7 +15,6 @@
 body {
   min-width: 320px;
   max-width: 480px;
-  margin: auto;
   min-height: 100dvh;
   overflow: hidden;
   background-color: black;
@@ -23,14 +22,17 @@ body {
 
 #jAndTContainer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
   min-width: 320px;
   max-width: 480px;
   margin: auto;
-  min-height: 100dvh;
+  height: 100dvh;
   overflow: hidden;
   background-color: black;
+  color: white;
 }
 
 #jAndT {
@@ -39,7 +41,39 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 90vw;
-  height: 60vh;
+  height: 40vh;
+}
+
+#endArrowForward {
+  background-image: url(icons/endarrowforward.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+#endArrowForward:hover,
+#endArrowBack:hover {
+  transform: scale(1.1);
+}
+
+#endArrowForward:active,
+#endArrowBack:active {
+  transform: scale(0.95);
+}
+
+#endArrowBack {
+  background-image: url(icons/endarrowback.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 10px;
 }
 
 #choiceContainer {
@@ -57,11 +91,7 @@ body {
   gap: 20px;
 }
 
-#choiceContainer p {
-  position: absolute;
-  top: 100px;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#jAndTContainer p {
   width: 70vw;
   text-align: center;
 }

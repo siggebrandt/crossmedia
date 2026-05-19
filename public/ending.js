@@ -1,6 +1,9 @@
 const jAndTContainer = document.getElementById("jAndTContainer");
 const choiceContainer = document.getElementById("choiceContainer");
 
+const endArrowForward = document.getElementById("endArrowForward");
+const endArrowBack = document.getElementById("endArrowBack")
+
 const redButton = document.getElementById("redButton");
 const greenButton = document.getElementById("greenButton");
 const blueButton = document.getElementById("blueButton");
@@ -11,14 +14,26 @@ const toldJohannesContainer = document.getElementById("toldJohannesContainer");
 
 const endView = document.getElementById("end");
 
+endArrowForward.addEventListener("click", function () {
+    jAndTContainer.style.display = "none";
+    choiceContainer.style.display = "flex";
+    endArrowBack.style.display = "block";
+})
+
+endArrowBack.addEventListener("click", function () {
+    jAndTContainer.style.display = "flex";
+    choiceContainer.style.display = "none";
+    endArrowBack.style.display = "none";
+})
+/*
 setTimeout(() => {
     jAndTContainer.classList.remove("active");
-}, 10000);
+}, 15000);
 
 setTimeout(() => {
     choiceContainer.classList.add("active");
 }, 11000)
-
+*/
 redButton.addEventListener("click", function () {
     choiceContainer.style.display = "none"
     toldAnnaContainer.style.display = "flex";
