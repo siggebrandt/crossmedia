@@ -208,7 +208,7 @@
 }
 
 .loreText {
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   margin: 0 15vw;
   user-select: none;
@@ -501,7 +501,7 @@ main {
   padding: 10px 0;
 }
 .chatMessageImage {
-  background-image: url("images/mailet_(1).webp");
+  background-image: url("images/mailet.webp");
   width: 450px;
   height: 300px;
   background-repeat: no-repeat;
