@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 /* --- Färg Variabler --- */
 :root {
   --blue: #0078ff; /* blå bubble */
@@ -9,8 +11,6 @@
   --darkgray: #1b1b1d; /* borders */
   --white: #ffffff; /* textfärg */
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
 @font-face {
   font-family: "bodoni";
@@ -332,15 +332,20 @@ h4 {
   background-image: url(images/anna.jpg);
 }
 
-#bodil,
-#nina,
-#glenn,
-#mamma {
+#bodil {
   background-image: url(images/bodil.jpg);
 }
-
+#nina {
+  background: red;
+}
+#glenn {
+  background: green;
+}
+#mamma {
+  background: pink;
+}
 #johannez {
-  background-image: url(images/Johannez\ shady.png);
+  background: var(--blue);
 }
 
 body {
@@ -450,7 +455,7 @@ main {
   border: 2px solid var(--lightgray);
   border-radius: 20px;
   flex: 1 0 0;
-  margin: 0 10px;
+  margin: 0 25px;
   height: 75%;
   display: flex;
   justify-content: space-around;
@@ -488,7 +493,7 @@ main {
 }
 
 .colon {
-  margin: 0 -20px;
+  margin: 0 -30px;
 }
 
 .oneMessageButton {

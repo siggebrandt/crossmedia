@@ -2,7 +2,15 @@ const body = document.querySelector("body");
 
 const startView = document.getElementById("startView");
 const loreView = document.getElementById("loreView");
+
+const messageViewAnna = document.querySelector(
+  "div#messageView.messageViewAnna",
+);
+const messageViewBodil = document.querySelector(
+  "div#messageView.messageViewBodil",
+);
 const messageView = document.getElementById("messageView");
+
 const allMessagesView = document.getElementById("allMessagesView");
 
 const playButton = document.getElementById("playButton");
@@ -13,7 +21,12 @@ const messagesBodil = document.querySelector("#messagesBodil");
 
 const timeAnnaMessanger = document.querySelector("#timeAnnaMessanger");
 
-const headerBack = document.querySelector("#headerBack");
+const headerBackAnna = document.querySelector(
+  ".messageViewAnna header #headerBack",
+);
+const headerBackBodil = document.querySelector(
+  ".messageViewBodil header #headerBack",
+);
 
 const selectMessageBox = document.getElementById("selectMessageBox");
 const selectMessageBoxSend = document.getElementById("selectMessageBoxSend");
@@ -39,11 +52,20 @@ playButton.addEventListener("click", function () {
 });
 
 messagesAnna.addEventListener("click", function () {
-  messageView.style.display = "block";
+  messageViewAnna.style.display = "block";
   allMessagesView.style.display = "none";
 });
 
-headerBack.addEventListener("click", function () {
+messagesBodil.addEventListener("click", function () {
+  messageViewBodil.style.display = "block";
+  allMessagesView.style.display = "none";
+});
+
+headerBackAnna.addEventListener("click", function () {
+  messageView.style.display = "none";
+  allMessagesView.style.display = "block";
+});
+headerBackBodil.addEventListener("click", function () {
   messageView.style.display = "none";
   allMessagesView.style.display = "block";
 });
@@ -59,7 +81,7 @@ function timeOnMessage(messagerDiv) {
 }
 timeOnMessage(timeAnnaMessanger);
 
-function TimerToNextMessage(minutesToWait, user, messageID) {
+/* function TimerToNextMessage(minutesToWait, user, messageID) {
   const startTime = new Date();
   setTimeout(
     () => {
@@ -69,9 +91,9 @@ function TimerToNextMessage(minutesToWait, user, messageID) {
       console.log(`seconds elapsed = ${Math.floor(ms / 1000)}`);
       // x minuter
     },
-    minutesToWait * 60 /* minutes */ * 1000,
+    minutesToWait * 60 * 1000,
   );
-}
+} */
 
 function NewMessage(userSender, messageID, customText = null) {
   const chatWindow = document.querySelector("#chatWindow");
