@@ -82,6 +82,27 @@ greenButton.addEventListener("click", function () {
     setTimeout(() => {
         endView.style.display = "flex"
     }, 5000)
+
+    
+    const data = {
+        choice: greenButton.textContent
+    };
+
+    try {
+        await fetch(scriptURL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        console.log("Skickat!");
+
+    } catch (error) {
+        console.error(error);
+    }
 })
 
 blueButton.addEventListener("click", function () {
@@ -97,6 +118,23 @@ blueButton.addEventListener("click", function () {
     }, 5000)
 
 
+    const data = {
+        choice: blueButton.textContent
+    };
 
+    try {
+        await fetch(scriptURL, {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
 
+        console.log("Skickat!");
+
+    } catch (error) {
+        console.error(error);
+    }
 });
