@@ -53,14 +53,13 @@ body {
   height: 30px;
 }
 
-#endArrowForward:hover,
-#endArrowBack:hover {
-  transform: scale(1.1);
+#endArrowForward:hover {
+  transform: scale(1.2);
 }
 
-#endArrowForward:active,
-#endArrowBack:active {
-  transform: scale(0.95);
+#endArrowForward:active {
+  transform: scale(0.85);
+  background-image: url(icons/arrowforwardsmall.svg);
 }
 
 #endArrowBack {

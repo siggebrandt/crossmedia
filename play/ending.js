@@ -17,23 +17,22 @@ const endView = document.getElementById("end");
 endArrowForward.addEventListener("click", function () {
     jAndTContainer.style.display = "none";
     choiceContainer.style.display = "flex";
-    endArrowBack.style.display = "block";
 })
 
-endArrowBack.addEventListener("click", function () {
+/* endArrowBack.addEventListener("click", function () {
     jAndTContainer.style.display = "flex";
     choiceContainer.style.display = "none";
     endArrowBack.style.display = "none";
-})
-/*
-setTimeout(() => {
+}) */
+
+/* setTimeout(() => {
     jAndTContainer.classList.remove("active");
-}, 15000);
+}, 9000);
 
 setTimeout(() => {
     choiceContainer.classList.add("active");
-}, 11000)
-*/
+}, 9000) */
+
 
 const scriptURL = "https://script.google.com/macros/s/AKfycbyoqFztAwCZSI3_Zcqy9S4ZUQH2I9hiDDpc59yyOolb9P92JsiSQtL5ouwa1FyPLaU4/exec";
 
@@ -71,7 +70,7 @@ redButton.addEventListener("click", async function () {
     }
 });
 
-greenButton.addEventListener("click", function () {
+greenButton.addEventListener("click", async function () {
     choiceContainer.style.display = "none";
     refusedAnnaContainer.style.display = "flex";
 
@@ -105,7 +104,7 @@ greenButton.addEventListener("click", function () {
     }
 })
 
-blueButton.addEventListener("click", function () {
+blueButton.addEventListener("click", async function () {
     choiceContainer.style.display = "none";
     toldJohannesContainer.style.display = "flex";
 
