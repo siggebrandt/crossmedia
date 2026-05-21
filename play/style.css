@@ -400,7 +400,7 @@ header img {
 
 main {
   background-color: var(--black);
-  height: calc(100vh - 115px - 145px);
+  height: calc(100vh - 115px - 160px);
   overflow-y: scroll;
 }
 
