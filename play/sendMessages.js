@@ -86,7 +86,7 @@ async function StartGame() {
   //eraseMessageBox("");
 
   // ANNA SKICKAR BILD
-  await sleep(800);
+  await sleep(2800);
   NewMessage("anna", 11);
   showCodeInput(codes[3]);
   document.querySelector("#selectMessageBox").style.flexWrap = "wrap";
