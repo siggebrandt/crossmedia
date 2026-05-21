@@ -46,6 +46,8 @@ async function StartGame() {
   NewMessage("anna", 4);
   await sleep(3500);
   NewMessage("anna", 5);
+  await sleep(1500);
+  NewMessage("anna", 50);
   await sleep(15000);
 
   // Kodinmatning 1: OR:652
@@ -57,19 +59,22 @@ async function StartGame() {
   NewMessage("anna", 6);
   await sleep(1200);
   NewMessage("anna", 7);
-  await sleep(8000);
+  await sleep(5000);
   NewMessage("anna", 8);
-  await sleep(1200);
+  await sleep(1800);
   NewMessage("anna", 9);
   eraseMessageBox("inväntar svar från anna");
-  //await sleep(1500);
 
-  // Vänta, sedan kodinmatning 2: 2006
-  await waitUntil(Date.now() + 1 * 60 * 1000); // 10 min
+  // Anna ger hjälp efter 5 min
+  await waitUntil(Date.now() + 1 * 60 * 1000); // 5 min
+  NewMessage("anna", 90);
+
+  // Vänta 5 min, sedan kodinmatning 2: 2006
+  await waitUntil(Date.now() + 1 * 60 * 1000); // 5 min
   console.log("1 minut");
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
-  eraseMessageBox("inväntar svar från anna");
+  //eraseMessageBox("");
 
   await sleep(1500);
   NewMessage("anna", 10);
@@ -78,7 +83,7 @@ async function StartGame() {
   // Kodinmatning 3: 418
   showCodeInput(codes[2]);
   await waitForCorrectCode(codes[2]);
-  eraseMessageBox("");
+  //eraseMessageBox("");
 
   // ANNA SKICKAR BILD
   await sleep(800);
@@ -91,7 +96,7 @@ async function StartGame() {
     input.style.height = "80%";
   });
   await waitForCorrectCode(codes[3]);
-  eraseMessageBox("");
+  //eraseMessageBox("");
 
   // Slutval
   await sleep(5500);

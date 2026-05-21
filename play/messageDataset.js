@@ -29,7 +29,12 @@ const messageData = [
       },
       {
         id: 5,
-        text: "Du kan väl höra av dig om du hittar något. Som vanligt behöver du ta bild på allting du hittar och kom ihåg att lämna allt precis så som du hittade det så han inte kommer på dig, tänk på din journalistiska integritet.\nP.S. det kan vara bra att ta bild på många potentiella ledtrådar.",
+        text: "Du kan väl höra av dig om du hittar något. Som vanligt behöver du ta bild på allting du hittar och kom ihåg att lämna allt precis så som du hittade det så han inte kommer på dig, tänk på din journalistiska integritet.",
+      },
+
+      {
+        id: 50,
+        text: "P.S. det kan vara bra att ta bild på många potentiella ledtrådar.",
       },
       // kodinmatning
       {
@@ -48,20 +53,30 @@ const messageData = [
         id: 9,
         text: "Orkanenbiblioteket??",
       },
+      {
+        id: 90,
+        text: "P.S. Bodil finns alltid till hjälp!",
+      },
       // kodinmatning
       {
         id: 10,
         text: "Vad skumt, bara en flashbacktråd. Hittade du inte något mer på kontoret?",
       },
       // kodinmatning
+      // anna skickar bild på mail
       {
         id: 11,
         text: " ",
       },
-      // anna skickar bild på mail
-
-      // spelaren hittar brevet
       // hemligheten avslöjas
+      {
+        id: 12,
+        text: "WOW",
+      },
+      {
+        id: 12,
+        text: "NU JÄVLAR",
+      },
     ],
   },
   {
@@ -74,7 +89,7 @@ const messageData = [
       },
       {
         id: 2,
-        text: "Ja det gör jag men nä vill inte gräva i hans business!",
+        text: "Nej jag vill inte gräva i hans business!",
       },
       {
         id: 21,
