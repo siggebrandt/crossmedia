@@ -125,50 +125,6 @@ body {
   transform: scale(0.95);
 }
 
-/*
-#redButton {
-    background-color: #330808;
-    box-shadow: 0 5px 10px rgba(120, 35, 35, 0.45);
-}
-
-#redButton:hover {
-    background-color: #471111;
-}
-
-#greenButton {
-    background-color: #0A2618;
-    box-shadow: 0 5px 10px rgba(34, 90, 60, 0.45);
-}
-
-#greenButton:hover {
-    background-color: #123322;
-}
-
-#greenButton:active {
-    background-color: #071A11;
-}
-
-#blueButton {
-    background-color: #081426;
-    box-shadow: 0 5px 10px rgba(40, 75, 140, 0.45);
-}
-
-#blueButton:hover {
-    background-color: #122033;
-}
-
-#redButton:hover,
-#greenButton:hover,
-#blueButton:hover {
-    transform: scale(1.05);
-}
-
-#redButton:active,
-#greenButton:active,
-#blueButton:active {
-    transform: scale(0.95);
-} */
-
 .view {
   position: absolute;
   inset: 0;

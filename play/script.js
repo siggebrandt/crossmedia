@@ -81,20 +81,6 @@ function timeOnMessage(messagerDiv) {
 }
 timeOnMessage(timeAnnaMessanger);
 
-/* function TimerToNextMessage(minutesToWait, user, messageID) {
-  const startTime = new Date();
-  setTimeout(
-    () => {
-      const ms = Date.now() - startTime;
-      NewMessage(user, messageID);
-
-      console.log(`seconds elapsed = ${Math.floor(ms / 1000)}`);
-      // x minuter
-    },
-    minutesToWait * 60 * 1000,
-  );
-} */
-
 function NewMessage(userSender, messageID, customText = null) {
   const chatWindow = document.querySelector("#chatWindow");
   const message = document.createElement("span");
@@ -159,5 +145,3 @@ function UserSendMessage(messages) {
     container.appendChild(selectMessageBox);
   });
 }
-
-//let status = false;
