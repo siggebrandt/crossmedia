@@ -499,7 +499,7 @@ main {
   padding: 10px 0;
 }
 .chatMessageImage {
-  background-image: url("images/mailet.webp");
+  background-image: url("images/mailet-real.webp");
   width: 350px;
   height: 200px;
   background-repeat: no-repeat;
