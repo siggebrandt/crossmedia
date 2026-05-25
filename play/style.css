@@ -337,13 +337,13 @@ h4 {
   background-image: url(images/agata.webp);
 }
 #glenn {
-  background: green;
+  background-image: url(images/glenn.webp);
 }
 #mamma {
-  background: pink;
+  background-image: url("images/mamma.webp");
 }
 #erik {
-  background: var(--blue);
+  background-image: url("images/erik.png");
 }
 
 body {
