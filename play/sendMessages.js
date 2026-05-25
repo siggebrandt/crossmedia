@@ -50,6 +50,10 @@ async function StartGame() {
   NewMessage("anna", 50);
   await sleep(15000);
 
+  // bodil 1: ORKANEN
+  NewMessageBodil("player", 101);
+  NewMessageBodil("bodil", 1);
+
   // Kodinmatning 1: OR:652
   showCodeInput(codes[0]);
   await waitForCorrectCode(codes[0]);
@@ -69,9 +73,14 @@ async function StartGame() {
   await waitUntil(Date.now() + 5 * 60 * 1000); // 5 min
   NewMessage("anna", 90);
 
+  // BODIL: 2 hjälp på biblioteket till kranen
+  NewMessageBodil("player", 102);
+  NewMessageBodil("bodil", 2);
+  NewMessageBodil("bodil", 3);
+
   // Vänta 5 min, sedan kodinmatning 2: 2006
   await waitUntil(Date.now() + 5 * 60 * 1000); // 5 min
-  console.log("1 minut");
+  /*  console.log("1 minut"); */
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
   //eraseMessageBox("");
@@ -79,6 +88,10 @@ async function StartGame() {
   await sleep(1500);
   NewMessage("anna", 10);
   await sleep(1500);
+
+  //BODIL 3: 3 punkterna.
+  NewMessageBodil("player", 105);
+  NewMessageBodil("bodil", 4);
 
   // Kodinmatning 3: 418
   showCodeInput(codes[2]);
@@ -95,6 +108,12 @@ async function StartGame() {
     input.style.width = "20px";
     input.style.height = "80%";
   });
+
+  // BODIL 4: Latin
+  NewMessageBodil("player", 107);
+  NewMessageBodil("bodil", 6);
+  NewMessageBodil("bodil", 7);
+
   await waitForCorrectCode(codes[3]);
   //eraseMessageBox("");
 

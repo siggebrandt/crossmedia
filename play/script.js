@@ -112,6 +112,31 @@ function NewMessage(userSender, messageID, customText = null) {
   }
 }
 
+function NewMessageBodil(userSender, messageID, customText = null) {
+  const chatWindow = document.querySelector("#.messageViewBodil #chatWindow");
+  const message = document.createElement("span");
+
+  let text;
+
+  if (customText !== null) {
+    text = customText;
+  } else {
+    const user = messageData.find((u) => u.name === userSender);
+    const foundMessage = user.messages.find((m) => m.id === messageID);
+    text = foundMessage.text;
+  }
+
+  message.classList.add(userSender === "player" ? "chatMe" : "chatThey");
+
+  message.textContent = text;
+  chatWindow.appendChild(message);
+  /*   message.scrollIntoView({ behavior: "smooth", block: "end" });
+   */
+  UpdateMessageText(userSender, text);
+
+  timeOnMessage(timeBodilMessanger);
+}
+
 function UpdateMessageText(userSender, message) {
   if (userSender == "player") return;
   else if (userSender == "anna") {

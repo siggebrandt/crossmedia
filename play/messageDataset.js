@@ -135,12 +135,12 @@ const messageData = [
       },
       {
         id: 107,
-        text: "Behöver hjälp Malmö live:",
+        text: "Behöver hjälp konstig text",
       },
     ],
   },
   {
-    name: "Bodil",
+    name: "bodil",
     messages: [
       {
         id: 1,
@@ -164,7 +164,11 @@ const messageData = [
       },
       {
         id: 6,
-        text: "Säg att Johannes skickat dig för att hämta det han glömt på rummet.",
+        text: "Oj det ser ut som latin",
+      },
+      {
+        id: 7,
+        text: "Översätt det och hitta ett ord som är 11 bokstäver långt.",
       },
     ],
   },
