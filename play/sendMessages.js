@@ -80,10 +80,8 @@ async function StartGame() {
 
   // Vänta 5 min, sedan kodinmatning 2: 2006
   await waitUntil(Date.now() + 5 * 60 * 1000); // 5 min
-  /*  console.log("1 minut"); */
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
-  //eraseMessageBox("");
 
   await sleep(1500);
   NewMessage("anna", 10);
@@ -96,7 +94,6 @@ async function StartGame() {
   // Kodinmatning 3: 418
   showCodeInput(codes[2]);
   await waitForCorrectCode(codes[2]);
-  //eraseMessageBox("");
 
   // ANNA SKICKAR BILD
   await sleep(2800);
@@ -115,10 +112,11 @@ async function StartGame() {
   NewMessageBodil("bodil", 7);
 
   await waitForCorrectCode(codes[3]);
-  //eraseMessageBox("");
+  await sleep(2000);
+  NewMessage("anna", 12);
 
   // Slutval
-  await sleep(5500);
+  await sleep(4500);
   window.location.replace("ending.html");
 }
 

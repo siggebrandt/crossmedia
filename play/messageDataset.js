@@ -71,11 +71,7 @@ const messageData = [
       // hemligheten avslöjas
       {
         id: 12,
-        text: "WOW",
-      },
-      {
-        id: 12,
-        text: "NU JÄVLAR",
+        text: "Hmmm",
       },
     ],
   },
