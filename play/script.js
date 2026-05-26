@@ -20,6 +20,7 @@ const messagesAnna = document.querySelector("#messagesAnna");
 const messagesBodil = document.querySelector("#messagesBodil");
 
 const timeAnnaMessanger = document.querySelector("#timeAnnaMessanger");
+const timeBodilMessanger = document.querySelector("#timeBodilMessanger");
 
 const headerBackAnna = document.querySelector(
   ".messageViewAnna header #headerBack",
