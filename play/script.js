@@ -113,7 +113,7 @@ function NewMessage(userSender, messageID, customText = null) {
 }
 
 function NewMessageBodil(userSender, messageID, customText = null) {
-  const chatWindow = document.querySelector("#.messageViewBodil #chatWindow");
+  const chatWindow = document.querySelector(".messageViewBodil #chatWindow");
   const message = document.createElement("span");
 
   let text;
