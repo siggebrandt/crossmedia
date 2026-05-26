@@ -70,7 +70,7 @@ async function StartGame() {
   eraseMessageBox("inväntar svar från anna");
 
   // Anna ger hjälp efter 5 min
-  await waitUntil(Date.now() + 5 * 60 * 1000); // 5 min
+  await waitUntil(Date.now() + 2 * 60 * 1000); // 5 min
   NewMessage("anna", 90);
 
   // BODIL: 2 hjälp på biblioteket till kranen
@@ -79,7 +79,7 @@ async function StartGame() {
   NewMessageBodil("bodil", 3);
 
   // Vänta 5 min, sedan kodinmatning 2: 2006
-  await waitUntil(Date.now() + 5 * 60 * 1000); // 5 min
+  await waitUntil(Date.now() + 2 * 60 * 1000); // 5 min
   showCodeInput(codes[1]);
   await waitForCorrectCode(codes[1]);
 
